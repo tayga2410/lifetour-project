@@ -1,64 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Организация походов в горы">
+  <link rel="preload" href="fonts/montserrat-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <title>Lifetour - Организация походов в горы</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="visually-hidden">Захватывающие приключения с компанией Lifetour</h1>
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__logo">
+            <picture>
+              <img src="img/main-logo.png" alt="" srcset="img/main-logo@2x.png 2x" width="205" height="62">
+            </picture>
           </div>
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#">Туры</a></li>
+            <li><a class="nav__link" href="#">Обучение</a></li>
+            <li><a class="nav__link" href="#">О нас</a></li>
+            <li><a class="nav__link" href="#">Отзывы</a></li>
+            <li><a class="nav__link" href="#">Фотографии</a></li>
+            <li><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
+          <span>8 800 725-32-32</span>
+        </nav>
+
+        <section class="hero">
+          <div class="swiper hero__swiper">
+            <div class="swiper-wrapper hero__swiper-wrapper">
+              <div class="swiper-slide hero__slide">
+                <h2>Захватывающие вершины Кавказа</h2>
+                <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
+                  горы
+                  Чегет.</p>
+                <a class="hero__button" href="#">Смотреть тур</a>
+                <span class="hero__duration">6 дней/5 ночей</span>
+                <span class="hero__complexity">Высокая сложность</span>
+                <div class="hero__iframer__wrapper">
+                  <a href="" class="hero__iframe-link">
+                    <picture>
+                      <img src="" alt="">
+                    </picture>
+                  </a>
+                  <button class="hero__iframe-button button"></button>
+                </div>
+              </div>
+              <div class="swiper-slide hero__slide">
+                <h2>Невероятная
+                  природа Камчатки</h2>
+                <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
+                  нетронутых уголков дикой природы в мире.</p>
+                <a class="hero__button" href="#">Смотреть тур</a>
+                <span class="hero__duration">9 дней/10 ночей</span>
+                <span class="hero__complexity">Средняя сложность</span>
+                <div class="hero__photo-wrapper">
+                  <picture>
+                    <img src="" alt="">
+                  </picture>
+                  <picture>
+                    <img src="" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide hero__slide">
+                <h2>Магические пейзажи Алтайского Края</h2>
+                <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
+                  дух ландшафтов Алтайских гор.</p>
+                <a class="hero__button" href="#">Смотреть тур</a>
+                <span class="hero__duration">8 дней/7 ночей</span>
+                <span class="hero__complexity">Лёгкая сложность</span>
+                <div class="hero__vidget__wrapper">
+                  <a href="" class="hero__vidget-link">
+                    <picture>
+                      <img src="" alt="">
+                    </picture>
+                  </a>
+                  <button class="hero__vidget-button button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
         </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
       </div>
-    </div>
+    </header>
+    <main>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

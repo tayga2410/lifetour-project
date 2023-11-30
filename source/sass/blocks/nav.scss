@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  background-color: #0266C1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: $color-default-white;
+  padding: 32px 20px;
+
+  span {
+    align-self: center;
+  }
+}
+.nav__logo {
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav__link {
+  color: $color-default-white;
+}
