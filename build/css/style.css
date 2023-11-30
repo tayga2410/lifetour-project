@@ -4,7 +4,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  src: url("fonts/montserrat-300.woff2") format("woff2");
+  src: url("../fonts/montserrat-300.woff2") format("woff2");
 }
 /* montserrat-400 - cyrillic_latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/montserrat-400.woff2") format("woff2");
+  src: url("../fonts/montserrat-400.woff2") format("woff2");
 }
 /* montserrat-500 - cyrillic_latin */
 @font-face {
@@ -20,7 +20,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("fonts/montserrat-500.woff2") format("woff2");
+  src: url("../fonts/montserrat-500.woff2") format("woff2");
 }
 /* montserrat-600 - cyrillic_latin */
 @font-face {
@@ -28,7 +28,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("fonts/montserrat-600.woff2") format("woff2");
+  src: url("../fonts/montserrat-600.woff2") format("woff2");
 }
 /* montserrat-700 - cyrillic_latin */
 @font-face {
@@ -36,7 +36,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/montserrat-700.woff2") format("woff2");
+  src: url("../fonts/montserrat-700.woff2") format("woff2");
 }
 /* montserrat-800 - cyrillic_latin */
 @font-face {
@@ -44,7 +44,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  src: url("fonts/montserrat-800.woff2") format("woff2");
+  src: url("../fonts/montserrat-800.woff2") format("woff2");
 }
 *,
 *::before,
@@ -1511,6 +1511,9 @@ button.swiper-pagination-bullet {
   display: -ms-flexbox;
   display: flex;
   background-color: #0266C1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #ffffff;
@@ -1534,10 +1537,6 @@ button.swiper-pagination-bullet {
   line-height: 18px;
 }
 
-.nav__logo {
-  margin: 0 119px 0 0;
-}
-
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1548,7 +1547,9 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  margin: 0 119px 0 0;
+  margin: 0 auto;
+  width: 572px;
+  padding: 0;
 }
 
 .nav__link {
@@ -1577,7 +1578,7 @@ button.swiper-pagination-bullet {
   font-weight: 800;
   line-height: 77px;
   font-style: normal;
-  margin: 0 0 25px;
+  margin: 0 0 23px;
   width: 944px;
   z-index: 10;
   position: relative;
@@ -1586,7 +1587,7 @@ button.swiper-pagination-bullet {
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
-  margin: 0 0 35px;
+  margin: 0 0 37px;
   width: 420px;
 }
 
@@ -1596,6 +1597,8 @@ button.swiper-pagination-bullet {
   padding: 20px;
   margin: 0 0 134px;
   border: none;
+  min-width: 180px;
+  height: 56px;
 }
 
 .hero__details {
