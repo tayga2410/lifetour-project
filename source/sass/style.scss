@@ -1,9 +1,4 @@
-// Vendor
-// ---------------------------------
 
-@import "vendor/normalize";
-// Swiper 8.4.7
-// @import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -15,11 +10,18 @@
 @import "global/utils";
 @import "global/container";
 
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+@import "vendor/swiper";
+
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
 @import "blocks/nav";
+@import "blocks/hero";
 
 // ---------------------------------
 
