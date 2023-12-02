@@ -36,6 +36,14 @@
   }
 }
 
+@mixin disabled {
+  &:disabled,
+  &--disabled {
+    @content;
+  }
+}
+
+
 // Desktop first
 
 @mixin vp-1439 {

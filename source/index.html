@@ -20,30 +20,42 @@
   <div class="wrapper">
     <header>
       <h1 class="visually-hidden">Захватывающие приключения с компанией Lifetour</h1>
-      <nav class="nav">
-        <div class="nav__logo">
-          <picture>
-            <img src="img/main-logo.png" alt="" srcset="img/main-logo@2x.png 2x" width="205" height="62">
-          </picture>
+      <nav class="nav nav--is-closed" data-menu="layer">
+        <div class="nav__logo nav__logo--is-closed" data-menu="menu-logo">
+          <svg width="205" height="62">
+            <use href="img/sprite.svg#logotype"></use>
+          </svg>
         </div>
-        <ul class="nav__list">
-          <li><a class="nav__link" href="#">Туры</a></li>
-          <li><a class="nav__link" href="#">Обучение</a></li>
-          <li><a class="nav__link" href="#">О нас</a></li>
-          <li><a class="nav__link" href="#">Отзывы</a></li>
-          <li><a class="nav__link" href="#">Фотографии</a></li>
-          <li><a class="nav__link" href="#">Контакты</a></li>
+        <ul class="nav__list nav__list--is-closed" data-menu="menu">
+          <li class="nav__item"><a class="nav__link" href="#">Туры</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Обучение</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Фотографии</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
         </ul>
-        <span>8 800 725-32-32</span>
-      </nav>
+        <a class="nav__telephone nav__logo--is-closed" href="tel:8-800-725-32-32"
+          data-menu="menu-telephone">8 800 725-32-32</a>
+        <button class="nav__burger-menu-button nav__burger-menu-button--is-closed" data-menu="button"> <svg
+            data-menu="menu-is-closed" width="26" height="26">
+            <use href="img/sprite.svg#burger-menu"></use>
+          </svg><svg data-menu="menu-is-opened" width="26" height="26">
+            <use href="img/sprite.svg#cross-close-icon"></use>
+          </svg></button>
 
+      </nav>
+      <div class="overlay" data-menu="menu-overlay"></div>
       <section class="hero">
         <div class="swiper hero__swiper" data-swiper="hero">
           <div class="swiper-wrapper hero__swiper-wrapper">
             <div class="swiper-slide hero__slide">
               <div class="hero__image-wrapper">
                 <picture>
-                  <img src="img/slider-image-1-desktop.jpg" srcset="img/slider-image-1-desktop2x.jpg 2x" width="1440"
+                  <source type="image/webp" media="(max-width: 1439px)"
+                  srcset="img/slider-image-1-tablet.webp 1x, img/slider-image-1-tablet@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 1439px)"
+                  srcset="img/slider-image-1-tablet.png 1x, img/slider-image-1-tablet@2x.png 2x">
+                  <img src="img/slider-image-1-desktop.png" srcset="img/slider-image-1-desktop2x.png 2x" width="1440"
                     height="800" alt="">
                 </picture>
               </div>
@@ -68,6 +80,10 @@
                 <a class="hero__iframe-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy"
                   data-video="video-link" aria-label="видео Академии">
                   <picture>
+                    <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/iframe-image-tablet.webp 1x, img/iframe-image-tablet@2x.webp 2x">
+                    <source type="image/jpg" media="(max-width: 1439px)"
+                    srcset="img/iframe-image-tablet.jpg 1x, img/iframe-image-tablet@2x.jpg 2x">
                     <img src="img/iframe-image-desktop.jpg" srcset="img/iframe-image-desktop@2x.jpg 2x" width="482"
                       height="317" alt="" data-video="video-media">
                   </picture>
@@ -78,7 +94,11 @@
             <div class="swiper-slide hero__slide">
               <div class="hero__image-wrapper">
                 <picture>
-                  <img src="img/slider-image-2-desktop.jpg" srcset="img/slider-image-2-desktop@2x.jpg 2x" width="1440"
+                  <source type="image/webp" media="(max-width: 1439px)"
+                  srcset="img/slider-image-2-tablet.webp 1x, img/slider-image-2-tablet@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 1439px)"
+                  srcset="img/slider-image-2-tablet.png 1x, img/slider-image-2-tablet@2x.png 2x">
+                  <img src="img/slider-image-2-desktop.png" srcset="img/slider-image-2-desktop@2x.png 2x" width="1440"
                     height="800" alt="">
                 </picture>
               </div>
@@ -98,6 +118,7 @@
                 </div>
               </div>
               <div class="hero__image-container hero__image-container--first-image">
+                div.hero__slider-
                 <picture>
                   <img src="img/hero-slider-photo-1-desktop.png" srcset="img/hero-slider-photo-1-desktop@2x.png 2x"
                     alt="" width="308" height="407">
@@ -113,7 +134,11 @@
             <div class="swiper-slide hero__slide">
               <div class="hero__image-wrapper">
                 <picture>
-                  <img src="img/slider-image-3-desktop.jpg" srcset="img/slider-image-3-desktop@2x.jpg 2x" width="1440"
+                  <source type="image/webp" media="(max-width: 1439px)"
+                  srcset="img/slider-image-3-tablet.webp 1x, img/slider-image-3-tablet@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 1439px)"
+                  srcset="img/slider-image-3-tablet.png 1x, img/slider-image-3-tablet@2x.png 2x">
+                  <img src="img/slider-image-3-desktop.png" srcset="img/slider-image-3-desktop@2x.png 2x" width="1440"
                     height="800" alt="">
                 </picture>
               </div>
@@ -134,8 +159,8 @@
               <div class="hero__vidget-wrapper" data-vidget="audio-container">
                 <a class="hero__vidget-link" href="https://music.yandex.ru/album/25474374">
                   <picture>
-                    <img src="img/vidget-overlay.jpg" srcset="img/vidget-overlay@2x.jpg 2x"
-                      alt="" width="340" height="220" data-vidget="audio-media">
+                    <img src="img/vidget-overlay.jpg" srcset="img/vidget-overlay@2x.jpg 2x" alt="" width="340"
+                      height="220" data-vidget="audio-media">
                   </picture>
                 </a>
                 <button class="hero__vidget-button button" data-vidget="button">запуск видео</button>
@@ -147,7 +172,9 @@
       </section>
     </header>
     <main>
-
+      <section class="tours">
+      <h2>Ближайшие туры</h2>
+    </section>
     </main>
     <footer>
       <div class="container"></div>

@@ -6,10 +6,22 @@
 .hero__image-wrapper {
   position: absolute;
   z-index: -1;
+
+  img {
+    height: 100vh;
+    display: flex;
+  }
 }
 
 .hero__content-wrapper {
   padding: 200px 120px 80px;
+
+  @include vp-1439 {
+    padding: 30px 45px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   h2 {
     font-size: 77px;
@@ -20,6 +32,14 @@
     width: 944px;
     z-index: 10;
     position: relative;
+
+    @include vp-1439 {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 56px;
+      text-align: center;
+      width: 678px;
+    }
   }
 
   p {
@@ -28,6 +48,11 @@
     line-height: 24px;
     margin: 0 0 37px;
     width: 471px;
+
+    @include vp-1439 {
+      text-align: center;
+      margin: 0 auto 37px;
+    }
   }
 }
 
@@ -39,11 +64,37 @@
   border: none;
   min-width: 180px;
   height: 56px;
+  cursor: pointer;
+
+  @include vp-1439 {
+    margin: 0 auto 45px;
+  }
+
+  @include hover-focus {
+    border: 1px solid #1c3374;
+    background-color: $color-default-white;
+    color: #1c3374;
+  }
+
+  @include active {
+    background-color: #1c3374;
+  }
+
+  @include disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+  }
 }
 
 .hero__details {
   display: flex;
   gap: 10px;
+
+  @include vp-1439 {
+    display: none;
+  }
 }
 
 .hero__duration,
@@ -75,7 +126,26 @@
   position: absolute;
   right: 120px;
   bottom: 154px;
-  z-index: 4;
+  z-index: 2;
+
+  @include vp-1439 {
+    position: absolute;
+    margin: 0 auto 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 442px;
+    height: 300px;
+    margin: 0 auto 90px;
+
+  }
+}
+
+.hero__iframe-link img {
+  @include vp-1439 {
+    width: 442px;
+    height: 300px;
+  }
 }
 
 .hero__iframe-button {
@@ -92,6 +162,23 @@
   cursor: pointer;
   font-size: 0;
 
+  @include hover-focus {
+    border: 1px solid #1c3374;
+  }
+
+  @include active {
+    border: 1px solid #1c3374;
+    background-color: #1c3374;
+  }
+
+  @include disabled {
+    border: 1px solid #0266c1;
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -102,7 +189,23 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
+    transition: border-color 0.3s ease;
   }
+}
+
+.hero__iframe-button:hover::after {
+  border-color: transparent transparent transparent $color-default-black;
+}
+
+.hero__iframe-button:focus::after {
+  border-color: transparent transparent transparent $color-default-black;
+}
+
+.hero_iframer-button:disabled::after {
+  border-color: transparent transparent transparent #0266c1;
+  cursor: not-allowed;
+  pointer-events: none;
+  outline: none;
 }
 
 .hero__pagination {
@@ -112,6 +215,15 @@
   left: 87.2%;
   bottom: 97px;
   cursor: pointer;
+
+  @include vp-1439 {
+    padding: 40px 0;
+    position: static;
+    margin: 0 auto;
+   width: 70px;
+   height: 90px;
+
+  }
 }
 
 .hero__image-container {
@@ -148,8 +260,8 @@
   width: 47px;
   height: 47px;
   border-radius: 50%;
-  border: 1px solid #1C3374;
-  background-color: #1C3374;
+  border: 1px solid #1c3374;
+  background-color: #1c3374;
   position: absolute;
   top: 71%;
   left: 50%;
