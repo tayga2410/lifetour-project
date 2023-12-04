@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {initSwiper, heroSwiper, toursSwiper} from './vendor/init-swiper';
+import {initSwiper, heroSwiper, toursSwiper, trainingSwiper} from './vendor/init-swiper';
 import {findVideos} from './vendor/init-video';
 // ---------------------------------
 
@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initSwiper(heroSwiper);
     initSwiper(toursSwiper);
+    initSwiper(trainingSwiper);
     findVideos();
   });
 });

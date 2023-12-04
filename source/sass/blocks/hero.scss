@@ -6,6 +6,7 @@
 .hero__image-wrapper {
   position: absolute;
   z-index: -1;
+  object-fit: cover;
 
   img {
     @include vp-767 {

@@ -211,6 +211,10 @@
             <div class="swiper-wrapper tours__swiper-wrapper">
               <div class="swiper-slide tours__slide" tabindex="0">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/tours/tours-slider-1-mobile.webp 1x, img/tours/tours-slider-1-mobile@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 767px)"
+                    srcset="img/tours/tours-slider-1-mobile.png 1x, img/tours/tours-slider-1-mobile@2x.png 2x">
                   <source type="image/webp" media="(max-width: 1199px)"
                     srcset="img/tours/tours-slider-1-tablet.webp 1x, img/tours/tours-slider-1-tablet@2x.webp 2x">
                   <source type="image/png" media="(max-width: 1199px)"
@@ -255,10 +259,14 @@
               </div>
               <div class="swiper-slide tours__slide" tabindex="0">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/tours/tours-slider-2-mobile.webp 1x, img/tours/tours-slider-2-mobile@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 767px)"
+                    srcset="img/tours/tours-slider-2-tablet.png 1x, img/tours/tours-slider-2-tablet@2x.png 2x">
                   <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="img/tours/tours-slider-2-tablet.webp 1x, img/tours/tours-slider-2-tablet@2x.webp 2x">
-                <source type="image/png" media="(max-width: 1199px)"
-                  srcset="img/tours/tours-slider-2-tablet.png 1x, img/tours/tours-slider-2-tablet@2x.png 2x">
+                    srcset="img/tours/tours-slider-2-tablet.webp 1x, img/tours/tours-slider-2-tablet@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 1199px)"
+                    srcset="img/tours/tours-slider-2-tablet.png 1x, img/tours/tours-slider-2-tablet@2x.png 2x">
                   <img src="img/tours/tours-slider-2-desktop.png" srcset="img/tours/tours-slider-2-desktop@2x.png 2x"
                     width="1440" height="800" alt="">
                 </picture>
@@ -296,6 +304,14 @@
               </div>
               <div class="swiper-slide tours__slide" tabindex="0">
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/tours/tours-slider-3-mobile.webp 1x, img/tours/tours-slider-3-mobile@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 767px)"
+                    srcset="img/tours/tours-slider-3-mobile.png 1x, img/tours/tours-slider-3-mobile@2x.png 2x">
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/tours/tours-slider-3-tablet.webp 1x, img/tours/tours-slider-3-tablet@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 1199px)"
+                    srcset="img/tours/tours-slider-3-tablet.png 1x, img/tours/tours-slider-3-tablet@2x.png 2x">
                   <img src="img/tours/tours-slider-3-desktop.png" srcset="img/tours/tours-slider-3-desktop@2x.png 2x"
                     width="1440" height="800" alt="">
                 </picture>
@@ -333,8 +349,18 @@
               </div>
               <div class="swiper-slide tours__slide" tabindex="0">
                 <picture>
-                  <img src="img/tours/tours-slider-1-desktop.png" srcset="img/tours/tours-slider-1-desktop@2x.png 2x"
-                    width="1440" height="800" alt="">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/tours/tours-slider-1-mobile.webp 1x, img/tours/tours-slider-1-mobile@2x.webp 2x">
+                    <source type="image/png" media="(max-width: 767px)"
+                      srcset="img/tours/tours-slider-1-mobile.png 1x, img/tours/tours-slider-1-mobile@2x.png 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/tours/tours-slider-1-tablet.webp 1x, img/tours/tours-slider-1-tablet@2x.webp 2x">
+                    <source type="image/png" media="(max-width: 1199px)"
+                      srcset="img/tours/tours-slider-1-tablet.png 1x, img/tours/tours-slider-1-tablet@2x.png 2x">
+                    <img src="img/tours/tours-slider-1-desktop.png" srcset="img/tours/tours-slider-1-desktop@2x.png 2x"
+                      width="1440" height="800" alt="">
+                  </picture>
                 </picture>
                 <div class="tours__content-wrapper">
                   <span class="tours__location"><svg width="16" height="16">
@@ -375,15 +401,159 @@
             </div>
           </div>
           <button class="tours__button">Показать все туры <svg width="12" height="16">
-            <use href="img/sprite.svg#tours-arrow-right">
-            </use>
-          </svg></button>
+              <use href="img/sprite.svg#tours-arrow-right">
+              </use>
+            </svg></button>
         </div>
       </section>
-    </main>
-    <footer>
-      <div class="container"></div>
-    </footer>
+      <section class="training">
+        <div class="training__container container" data-swiper="training-container">
+          <h2>Обучение</h2>
+          <span class="training__title-shadow">Обучение</span>
+          <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
+            Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+          <h3>Наши инструкторы</h3>
+          <div class="training__swiper-button-wrapper">
+            <button class="swiper-button-prev training__button-prev" data-swiper="button-prev">
+              <svg width="17" height="12">
+                <use href="img/sprite.svg#arrow-left">
+                </use>
+              </svg>предыдущий слайд</button>
+            <button class="swiper-button-next training__button-next" data-swiper="button-next"><svg width="17"
+                height="12">
+                <use href="img/sprite.svg#arrow-left">
+                </use>
+              </svg>следующий слайд
+            </button>
+          </div>
+          <div class="swiper training__swiper" data-swiper="training">
+            <div class="swiper-wrapper training__swiper-wrapper">
+              <div class="swiper-slide training__slide" tabindex="0">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/training/slider-image-1-tablet.webp 1x, img/training/slider-image-1-tablet@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 1199px)"
+                    srcset="img/training/slider-image-1-tablet.png 1x, img/training/slider-image-1-tablet@2x.png 2x">
+                  <img src="img/training/slider-image-1-desktop.png"
+                    srcset="img/training/slider-image-1-desktop@2x.png 2x" width="255" height="200" alt="">
+                </picture>
+                <h4>Александр
+                  Прокофьев</h4>
+                <a class="training__slide-social" href="#"><svg width="24" height="24">
+                    <use href="img/sprite.svg#slider-vk-icon">
+                    </use>
+                  </svg></a>
+                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+              </div>
+              <div class="swiper-slide training__slide" tabindex="0">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/training/slider-image-2-tablet.webp 1x, img/training/slider-image-2-tablet@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 1199px)"
+                    srcset="img/training/slider-image-2-tablet.png 1x, img/training/slider-image-2-tablet@2x.png 2x">
+                  <img src="img/training/slider-image-2-desktop.png"
+                    srcset="img/training/slider-image-2-desktop@2x.png 2x" width="255" height="200" alt="">
+                </picture>
+                <h4>Светлана
+                  Афиногенова</h4>
+                <a class="training__slide-social" href="#"><svg width="24" height="24">
+                    <use href="img/sprite.svg#slider-vk-icon">
+                    </use>
+                  </svg></a>
+                <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать —
+                  в этом назначение жизни.</p>
+              </div>
+              <div class="swiper-slide training__slide" tabindex="0">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/training/slider-image-3-tablet.webp 1x, img/training/slider-image-3-tablet@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1199px)"
+                  srcset="img/training/slider-image-3-tablet.png 1x, img/training/slider-image-3-tablet@2x.png 2x">
+                  <img src="img/training/slider-image-3-desktop.png"
+                    srcset="img/training/slider-image-3-desktop@2x.png 2x" width="255" height="200" alt="">
+                </picture>
+                <h4>Надежда
+                  Колесниченко</h4>
+                <a class="training__slide-social" href="#"><svg width="24" height="24">
+                    <use href="img/sprite.svg#slider-vk-icon">
+                    </use>
+                  </svg></a>
+                <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя
+                  спокойно и уверенно.</p>
+              </div>
+              <div class="swiper-slide training__slide" tabindex="0">
+                <picture>
+                  <img src="img/training/slider-image-4-desktop.png"
+                    srcset="img/training/slider-image-4-desktop@2x.png 2x" width="255" height="200" alt="">
+                </picture>
+                <h4>Федор
+                  Кайгородов</h4>
+                <a class="training__slide-social"><svg width="24" height="24">
+                    <use href="img/sprite.svg#slider-vk-icon">
+                    </use>
+                  </svg></a>
+                <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                  путешествует по Европе.</p>
+              </div>
+              <div class="swiper-slide training__slide" tabindex="0">
+                <picture>
+                  <img src="img/training/slider-image-1-desktop.png"
+                    srcset="img/training/slider-image-1-desktop@2x.png 2x" width="255" height="200" alt="">
+                </picture>
+                <h4>Дмитрий Давыденко</h4>
+                <span class="training__slide-social"><svg width="24" height="24">
+                    <use href="img/sprite.svg#slider-vk-icon">
+                    </use>
+                  </svg></span>
+                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+              </div>
+              <div class="swiper-slide training__slide" tabindex="0">
+                <picture>
+                  <img src="img/training/slider-image-2-desktop.png"
+                    srcset="img/training/slider-image-2-desktop@2x.png 2x" width="255" height="200" alt="">
+                </picture>
+                <h4>Мария Краснова</h4>
+                <a class="training__slide-social"><svg width="24" height="24">
+                    <use href="img/sprite.svg#slider-vk-icon">
+                    </use>
+                  </svg></a>
+                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+              </div>
+            </div>
+          </div>
+          <h5>Процесс обучения</h3>
+            <ul class="training__process-list">
+              <li class="training__process-item">
+                <img src="img/svg/map-icon.svg" alt="" width="25" height="25">
+                <span class="training__process-description"> Изучение спортивного
+                  туристского движения</span>
+              </li>
+              <li class="training__process-item"><img src="img/svg/boots-icon.svg" alt="" width="25" height="25">
+                <span class="training__process-description"> Подготовка и техническое снаряжение
+                  в походах</span>
+              </li>
+              <li class="training__process-item"><img src="img/svg/tree-icon.svg" alt="" width="25" height="25">
+                <span class="training__process-description"> Лекции
+                  по окружающей среде, экологии
+                  и гигиене</span>
+              </li>
+              <li class="training__process-item"><img src="img/svg/mountain-icon.svg" alt="" width="25" height="25">
+                <span class="training__process-description"> Разъяснение сложности горных препятствий</span>
+              </li>
+            </ul>
+
+
+        </div>
+  </div>
+  </div>
+
+  </section>
+
+
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
   </div>
 
   <script src="js/vendor.min.js"></script>

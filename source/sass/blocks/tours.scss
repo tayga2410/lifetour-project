@@ -14,6 +14,7 @@
     @include vp-767 {
       font-size: 22px;
       line-height: 22px;
+      padding: 56px 0 0;
     }
   }
 }
@@ -36,6 +37,9 @@
 
   @include vp-767 {
     left: 15px;
+    top: 28px;
+    max-width: 334px;
+    overflow: hidden;
   }
 }
 
@@ -54,6 +58,11 @@
   @include vp-1199 {
     right: 45px;
     top: 65px;
+  }
+
+  @include vp-767 {
+    right: 15px;
+    top: 40px;
   }
 }
 
@@ -101,10 +110,15 @@
   @include vp-1199 {
     margin: 0 0 36px;
   }
+
+  @include vp-767 {
+    margin: 0 0 34px;
+  }
 }
 
 .tours__slide {
   position: relative;
+  object-fit: cover;
 }
 
 .tours__content-wrapper {
@@ -121,6 +135,10 @@
 
   @include vp-1199 {
     width: 289px;
+  }
+
+  @include vp-767 {
+    width: 279px;
   }
 }
 
@@ -209,4 +227,11 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+
+  @include vp-767 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
 }
