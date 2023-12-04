@@ -2146,7 +2146,17 @@ button.swiper-pagination-bullet {
   margin: 0 0 53px;
 }
 
-/* @mixin hover-focus {
+.tours__container {
+  position: relative;
+}
+
+.tours__slide {
+  position: relative;
+}
+
+.tours__content-wrapper {
+  z-index: 1;
+} /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
