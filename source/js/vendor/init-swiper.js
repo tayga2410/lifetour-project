@@ -30,6 +30,13 @@ const toursSwiperOptions = {
       slidesPerView: 3,
       spaceBetween: 30
     },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18
+    },
+    350: {
+      slidesPerView: 1,
+    },
   },
 };
 

@@ -194,6 +194,7 @@
       <section class="tours">
         <div class="tours__container container" data-swiper="tours-container">
           <h2>Ближайшие туры</h2>
+          <span class="tours__title-shadow">Ближайшие туры</span>
           <div class="tours__swiper-button-wrapper">
             <button class="swiper-button-prev tours__button-prev" data-swiper="button-prev">
               <svg width="17" height="12">
@@ -210,6 +211,10 @@
             <div class="swiper-wrapper tours__swiper-wrapper">
               <div class="swiper-slide tours__slide" tabindex="0">
                 <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/tours/tours-slider-1-tablet.webp 1x, img/tours/tours-slider-1-tablet@2x.webp 2x">
+                  <source type="image/png" media="(max-width: 1199px)"
+                    srcset="img/tours/tours-slider-1-tablet.png 1x, img/tours/tours-slider-1-tablet@2x.png 2x">
                   <img src="img/tours/tours-slider-1-desktop.png" srcset="img/tours/tours-slider-1-desktop@2x.png 2x"
                     width="1440" height="800" alt="">
                 </picture>
@@ -250,6 +255,10 @@
               </div>
               <div class="swiper-slide tours__slide" tabindex="0">
                 <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/tours/tours-slider-2-tablet.webp 1x, img/tours/tours-slider-2-tablet@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1199px)"
+                  srcset="img/tours/tours-slider-2-tablet.png 1x, img/tours/tours-slider-2-tablet@2x.png 2x">
                   <img src="img/tours/tours-slider-2-desktop.png" srcset="img/tours/tours-slider-2-desktop@2x.png 2x"
                     width="1440" height="800" alt="">
                 </picture>

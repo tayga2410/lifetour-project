@@ -67,7 +67,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
-  color: #000000;
+  color: #2D383F;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -80,7 +80,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #2D383F;
   text-decoration: none;
 }
 
@@ -98,7 +98,7 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
           box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: #2D383F;
 }
 
 input,
@@ -1643,7 +1643,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 1199px) {
   .nav__link {
-    color: #000000;
+    color: #2D383F;
     font-size: 16px;
     font-weight: 700;
     line-height: 16px;
@@ -1978,11 +1978,11 @@ button.swiper-pagination-bullet {
 }
 
 .hero__iframe-button:hover::after {
-  border-color: transparent transparent transparent #000000;
+  border-color: transparent transparent transparent #2D383F;
 }
 
 .hero__iframe-button:focus::after {
-  border-color: transparent transparent transparent #000000;
+  border-color: transparent transparent transparent #2D383F;
 }
 
 .hero_iframer-button:disabled::after {
@@ -2124,6 +2124,41 @@ button.swiper-pagination-bullet {
   padding: 123px 0 0;
   margin: 0 0 50px;
 }
+@media (max-width: 1199px) {
+  .tours h2 {
+    padding: 68px 0 0;
+    margin: 0 0 22px;
+  }
+}
+@media (max-width: 767px) {
+  .tours h2 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.tours__title-shadow {
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 55px;
+  color: #2d383f;
+  opacity: 0.03;
+  position: absolute;
+  top: 106px;
+  left: 120px;
+}
+@media (max-width: 1199px) {
+  .tours__title-shadow {
+    top: 50px;
+    left: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .tours__title-shadow {
+    left: 15px;
+  }
+}
 
 .tours__container {
   position: relative;
@@ -2138,6 +2173,12 @@ button.swiper-pagination-bullet {
   display: -ms-flexbox;
   display: flex;
   gap: 4px;
+}
+@media (max-width: 1199px) {
+  .tours__swiper-button-wrapper {
+    right: 45px;
+    top: 65px;
+  }
 }
 
 .tours__button-prev,
@@ -2197,6 +2238,11 @@ button.swiper-pagination-bullet {
 .tours__swiper {
   margin: 0 0 63px;
 }
+@media (max-width: 1199px) {
+  .tours__swiper {
+    margin: 0 0 36px;
+  }
+}
 
 .tours__slide {
   position: relative;
@@ -2218,6 +2264,11 @@ button.swiper-pagination-bullet {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 15px;
+}
+@media (max-width: 1199px) {
+  .tours__content-wrapper {
+    width: 289px;
+  }
 }
 
 .tours__location {
