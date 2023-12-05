@@ -11,7 +11,7 @@
       font-size: 25px;
       font-weight: 800;
       line-height: 25px;
-      margin: 32px 0 26px 0;
+      margin: 16px 0 22px;
     }
 
     @include vp-767 {
@@ -28,7 +28,11 @@
     margin: 0 0 53px 0;
 
     @include vp-1199 {
-      margin: 0 0 64px 0;
+      margin: 0 0 62px 0;
+    }
+
+    @include vp-767 {
+      margin: 0 0 56px;
     }
   }
 
@@ -37,6 +41,20 @@
     font-weight: 700;
     line-height: 21px;
     margin: 0 0 29px;
+    max-width: 250px;
+
+    @include vp-1199 {
+      margin: 0 0 39px;
+      font-size: 18px;
+      line-height: 18px;
+      max-width: 200px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 16px;
+      margin: 0 0 21px;
+    }
   }
 
   p {
@@ -47,12 +65,14 @@
     margin: 0 0 60px;
 
     @include vp-1199 {
-      margin: 0 0 25px;
+      margin: 0 0 28px;
+      max-width: 560px;
     }
 
     @include vp-767 {
-      font-size: 12px;
-      line-height: 16px;
+      max-width: 320px;
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }
@@ -69,15 +89,20 @@
   left: 120px;
 
   @include vp-1199 {
-    top: 50px;
+    top: -11px;
     left: 45px;
+    font-size: 40px;
+    line-height: 40px;
   }
 
   @include vp-767 {
     left: 15px;
-    top: 28px;
-    max-width: 334px;
+    top: -4px;
+    max-width: 159px;
     overflow: hidden;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 26px;
   }
 }
 
@@ -90,12 +115,12 @@
 
   @include vp-1199 {
     right: 45px;
-    top: 65px;
+    top: 166px;
   }
 
   @include vp-767 {
-    right: 15px;
-    top: 40px;
+    right: 14px;
+    top: 204px;
   }
 }
 
@@ -138,16 +163,32 @@
 }
 
 .training__swiper {
-  margin: 0 0 56px;
+  margin: 0 auto 56px;
+  max-width: 1200px;
+
+  @include vp-1199 {
+    margin: 0 auto 26px;
+    max-width: 768px;
+
+  }
+
+  @include vp-767 {
+    margin: 0 auto 25px;
+    max-width: 320px;
+  }
 }
 
 .training__slide {
   position: relative;
   object-fit: cover;
   padding: 15px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid rgba(2, 102, 193, 0.1);
+
+  @include vp-767 {
+    max-width: 320px;
+  }
 
   h4 {
     font-size: 14px;
@@ -165,7 +206,11 @@
     @include vp-1199 {
       width: 268px;
       height: 200px;
+    }
 
+    @include vp-767 {
+      width: 290px;
+      height: 200px;
     }
   }
 
@@ -178,6 +223,10 @@
 
     @include vp-1199 {
       min-height: 96px;
+    }
+
+    @include vp-767 {
+      min-height: 60px;
     }
   }
 }
@@ -192,6 +241,16 @@
   list-style-type: none;
   padding: 0 0 56px;
   margin: 0;
+
+  @include vp-1199 {
+    flex-wrap: wrap;
+    gap: 92px 74px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 
 .training__process-item {
@@ -200,6 +259,23 @@
   align-items: flex-start;
   position: relative;
   padding: 0 10px;
+
+  @include vp-1199 {
+    padding: 0 0 0 10px;
+  }
+
+  @include vp-767 {
+    gap: 13px;
+    padding: 0 0 0 30px;
+    align-items: center;
+  }
+
+  img {
+    @include vp-767 {
+      width: 21px;
+      height: 19px;
+    }
+  }
 
   &::before {
     content: "";
@@ -211,6 +287,18 @@
     background-color: #0266c1;
     left: 10px;
     bottom: -15px;
+
+    @include vp-1199 {
+      display: none;
+    }
+
+    @include vp-767 {
+      display: block;
+      width: 13px;
+      height: 13px;
+      left: 0px;
+      bottom: 10px;
+    }
   }
 
   &::after {
@@ -223,6 +311,59 @@
     left: 10px;
     bottom: -8px;
     opacity: 0.2;
+
+    @include vp-1199 {
+      display: none;
+    }
+
+    @include vp-767 {
+      display: block;
+      width: 1px;
+      height: 55px;
+      background-color: #0266c1;
+      left: 6px;
+      bottom: -41px;
+      opacity: 0.2;
+    }
+  }
+
+  &--map {
+    @include vp-1199 {
+      order: 1;
+    }
+  }
+
+  &--boots {
+    @include vp-1199 {
+      order: 2;
+    }
+  }
+
+  &--tree {
+    @include vp-1199 {
+      order: 4;
+    }
+
+    @include vp-767 {
+      order: 3;
+    }
+  }
+
+  &--mountain {
+    @include vp-1199 {
+      order: 3;
+    }
+
+    @include vp-767 {
+      order: 4;
+    }
+  }
+}
+
+.training__process-item:last-child::after {
+  width: 330px;
+  @include vp-1199 {
+    display: none;
   }
 }
 
@@ -233,4 +374,17 @@
   line-height: 24px;
   margin: 0;
   max-width: 198px;
+
+  @include vp-1199 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    max-width: 225px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 201px;
+  }
 }

@@ -38,7 +38,7 @@
   @include vp-767 {
     left: 15px;
     top: 28px;
-    max-width: 334px;
+    max-width: 200px;
     overflow: hidden;
   }
 }
@@ -46,6 +46,10 @@
 .tours__container {
   position: relative;
   padding-bottom: 100px;
+
+  @include vp-767 {
+    padding-bottom: 34px;
+  }
 }
 
 .tours__swiper-button-wrapper {
@@ -118,7 +122,19 @@
 
 .tours__slide {
   position: relative;
+}
+
+.tours__image-container {
   object-fit: cover;
+
+  img {
+    width: 380px;
+    height: 416px;
+
+    @include vp-1199 {
+      width: 330px;
+    }
+  }
 }
 
 .tours__content-wrapper {

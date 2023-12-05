@@ -9,6 +9,12 @@
   object-fit: cover;
 
   img {
+    height: 800px;
+
+    @include vp-1199 {
+      height: 1024px;
+    }
+
     @include vp-767 {
       height: 568px;
     }
@@ -74,6 +80,15 @@
       width: 287px;
       margin: 0 auto 60px;
     }
+  }
+}
+
+.hero__swiper {
+  margin: 0 auto;
+  max-width: 1440px;
+
+  @include vp-1199 {
+    max-width: 1199px;
   }
 }
 

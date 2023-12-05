@@ -14,7 +14,7 @@ const heroSwiperOptions = {
     clickable: true,
   },
   breakpoints: {
-    1440: {
+    350: {
       slidesPerView: 1,
     },
   },
@@ -27,16 +27,16 @@ const toursSwiperOptions = {
     prevEl: '[data-swiper="tours-container"] [data-swiper="button-prev"]',
   },
   breakpoints: {
-    1440: {
-      slidesPerView: 3,
-      spaceBetween: 30
+    350: {
+      slidesPerView: 1,
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 18
     },
-    350: {
-      slidesPerView: 1,
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30
     },
   },
 };
@@ -48,16 +48,19 @@ const trainingSwiperOptions = {
     prevEl: '[data-swiper="training-container"] [data-swiper="button-prev"]',
   },
   breakpoints: {
-    1440: {
-      slidesPerView: 4,
-      spaceBetween: 20
+    320: {
+      slidesPerView: 1,
+      initialSlide: 2
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 20,
+      initialSlide: 0
     },
-    350: {
-      slidesPerView: 1,
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      initialSlide: 0
     },
   },
 };
