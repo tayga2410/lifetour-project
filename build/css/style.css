@@ -189,7 +189,6 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 }
 .wrapper .header,
@@ -201,14 +200,6 @@ button,
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-
-.rouble {
-  font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
 }
 
 .visually-hidden {
@@ -240,12 +231,6 @@ button,
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none;
-}
-
-.no-transition {
-  /* stylelint-disable-next-line */
-  -webkit-transition: none !important;
-  transition: none !important;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -2919,7 +2904,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 767px) {
   .about__container {
-    padding: 10px 15px;
+    padding: 374px 15px 10px;
   }
 }
 .about__container h2 {
@@ -2940,6 +2925,8 @@ button.swiper-pagination-bullet {
   .about__container h2 {
     font-size: 22px;
     line-height: 22px;
+    padding: 0;
+    margin: 0 0 25px;
   }
 }
 
@@ -2948,8 +2935,6 @@ button.swiper-pagination-bullet {
   left: 0;
   top: 23px;
   z-index: -1;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media (max-width: 1199px) {
   .about__image-wrapper {
@@ -2958,7 +2943,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 767px) {
   .about__image-wrapper {
-    position: static;
+    top: -33px;
   }
 }
 .about__image-wrapper img {
@@ -3001,6 +2986,11 @@ button.swiper-pagination-bullet {
           flex-direction: column;
   gap: 29px;
 }
+@media (max-width: 767px) {
+  .about__content-wrapper {
+    gap: 27px;
+  }
+}
 
 .about__text-wrapper {
   display: -webkit-box;
@@ -3021,6 +3011,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) {
   .about__text-wrapper {
     max-width: 320px;
+    gap: 13px;
   }
 }
 .about__text-wrapper--first-wrapper {
@@ -3052,6 +3043,11 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   line-height: 22px;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .about__text-wrapper p {
+    line-height: 20px;
+  }
 }
 @media (max-width: 1199px) {
   .about__text-wrapper br {
