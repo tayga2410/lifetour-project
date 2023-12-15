@@ -5,7 +5,9 @@ const loopEnabled = true; // loop: false для hero блока
 
 const heroSwiperLoop = loopEnabled;
 const toursSwiperLoop = loopDisabled;
-const trainingsSwiperLoop = loopDisabled;
+const trainingSwiperLoop = loopDisabled;
+const reviewsSwiperLoop = loopDisabled;
+const advantagesSwiperLoop = loopDisabled;
 
 const heroSwiperOptions = {
   loop: heroSwiperLoop,
@@ -42,7 +44,7 @@ const toursSwiperOptions = {
 };
 
 const trainingSwiperOptions = {
-  loop: trainingsSwiperLoop,
+  loop: trainingSwiperLoop,
   navigation: {
     nextEl: '[data-swiper="training-container"] [data-swiper="button-next"]',
     prevEl: '[data-swiper="training-container"] [data-swiper="button-prev"]',
@@ -65,13 +67,36 @@ const trainingSwiperOptions = {
   },
 };
 
+const reviewsSwiperOptions = {
+  loop:reviewsSwiperLoop,
+  navigation: {
+    nextEl: '[data-swiper="reviews-container"] [data-swiper="button-next"]',
+    prevEl: '[data-swiper="reviews-container"] [data-swiper="button-prev"]',
+  },
+  slidesPerView: 1,
+};
+
+const advantagesSwiperOptions = {
+  loop:advantagesSwiperLoop,
+  navigation: {
+    nextEl: '[data-swiper="advantages-container"] [data-swiper="button-next"]',
+    prevEl: '[data-swiper="advantages-container"] [data-swiper="button-prev"]',
+  },
+  spaceBetween: 30,
+  slidesPerView: 3,
+  initialSlide: 1
+
+};
+
 
 const heroSwiper = new swiper('[data-swiper="hero"]', heroSwiperOptions);
 const toursSwiper = new swiper('[data-swiper="tours"]', toursSwiperOptions);
 const trainingSwiper = new swiper('[data-swiper="training"]',  trainingSwiperOptions);
+const reviewsSwiper = new swiper('[data-swiper="reviews"]',  reviewsSwiperOptions);
+const advantagesSwiper =  new swiper('[data-swiper="advantages"]', advantagesSwiperOptions);
 
 function initSwiper(swiperInstance) {
   swiperInstance.init();
 }
 
-export {initSwiper, heroSwiper, toursSwiper, trainingSwiper};
+export {initSwiper, heroSwiper, toursSwiper, trainingSwiper, reviewsSwiper, advantagesSwiper};

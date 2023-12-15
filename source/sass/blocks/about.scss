@@ -1,3 +1,15 @@
+.about {
+    padding: 0 0 135px;
+
+    @media (max-width: $vp-768) {
+      padding: 0 0 54px;
+    }
+
+    @include vp-767 {
+      padding: 0 0 31px;
+    }
+  }
+
 .about__container {
   position: relative;
   padding: 46px 120px 0 735px;
@@ -60,7 +72,7 @@
   opacity: 0.03;
   position: absolute;
   left: 735px;
-  top: -14px;
+  top: 28px;
 
   @include vp-1199 {
     left: 453px;
