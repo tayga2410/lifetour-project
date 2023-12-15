@@ -3329,14 +3329,16 @@ button.swiper-pagination-bullet {
 }
 
 .advantages__container {
-  padding-top: 36px;
+  padding: 65px 0 0;
   position: relative;
+  overflow: hidden;
 }
 .advantages__container h2 {
   font-size: 35px;
   font-weight: 800;
   line-height: 100%;
   text-align: center;
+  margin: 0 0 46px;
 }
 
 .advantages__title-shadow {
@@ -3348,7 +3350,27 @@ button.swiper-pagination-bullet {
   opacity: 0.03;
   position: absolute;
   top: 48px;
-  left: 39%;
+  left: 34%;
+}
+
+.advantages__swiper {
+  margin: 0 auto 50px;
+  padding: 0 120px;
+}
+@media (max-width: 1199px) {
+  .advantages__swiper {
+    padding: 0 45px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .advantages__swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .advantages__slide {
@@ -3381,23 +3403,24 @@ button.swiper-pagination-bullet {
   margin: 0;
   width: 340px;
 }
+@media (max-width: 767px) {
+  .advantages__slide br {
+    display: none;
+  }
+}
 
 .advantages__swiper-button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1199px) {
   .advantages__swiper-button-wrapper {
-    right: 44px;
-    top: -8px;
-  }
-}
-@media (max-width: 767px) {
-  .advantages__swiper-button-wrapper {
-    right: 15px;
-    top: -10px;
+    display: none;
   }
 }
 
@@ -3407,6 +3430,7 @@ button.swiper-pagination-bullet {
   background-color: #0266C1;
   border: none;
   cursor: pointer;
+  position: static;
 }
 @media (hover: hover) {
   .advantages__button-prev:hover:not(.focus-visible),
@@ -3444,15 +3468,10 @@ button.swiper-pagination-bullet {
   color: #1c3374;
 }
 
-.advantages__button-prev {
-  left: -79px;
-}
-
 .advantages__button-next {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  right: 0;
 }
 
 /* @mixin hover-focus {

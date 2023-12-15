@@ -9,6 +9,9 @@ const trainingSwiperLoop = loopDisabled;
 const reviewsSwiperLoop = loopDisabled;
 const advantagesSwiperLoop = loopDisabled;
 
+let desktop = window.matchMedia('(min-width: 1200px)');
+let advantagesSwiper;
+
 const heroSwiperOptions = {
   loop: heroSwiperLoop,
   pagination: {
@@ -83,9 +86,8 @@ const advantagesSwiperOptions = {
     prevEl: '[data-swiper="advantages-container"] [data-swiper="button-prev"]',
   },
   spaceBetween: 30,
+  initialSlide: 1,
   slidesPerView: 3,
-  initialSlide: 1
-
 };
 
 
@@ -93,10 +95,24 @@ const heroSwiper = new swiper('[data-swiper="hero"]', heroSwiperOptions);
 const toursSwiper = new swiper('[data-swiper="tours"]', toursSwiperOptions);
 const trainingSwiper = new swiper('[data-swiper="training"]',  trainingSwiperOptions);
 const reviewsSwiper = new swiper('[data-swiper="reviews"]',  reviewsSwiperOptions);
-const advantagesSwiper =  new swiper('[data-swiper="advantages"]', advantagesSwiperOptions);
+
+function handleSwiper() {
+  if (desktop.matches) {
+    if (!advantagesSwiper) {
+      advantagesSwiper = new swiper('[data-swiper="advantages"]', advantagesSwiperOptions);
+      console.log('Свайпер включен');
+    }
+  } else {
+    if (advantagesSwiper) {
+      advantagesSwiper.destroy();
+      advantagesSwiper = null;
+      console.log('Свайпер отключен');
+    }
+  }
+}
 
 function initSwiper(swiperInstance) {
   swiperInstance.init();
 }
 
-export {initSwiper, heroSwiper, toursSwiper, trainingSwiper, reviewsSwiper, advantagesSwiper};
+export {initSwiper, heroSwiper, toursSwiper, trainingSwiper, reviewsSwiper, handleSwiper};
