@@ -1,14 +1,14 @@
 .advantages__container {
-  padding: 65px 0 0;
+  padding: 65px 0 81px;
   position: relative;
   overflow: hidden;
 
   @include vp-1199 {
-    padding: 115px 0 0;
+    padding: 115px 0 45px;
   }
 
   @include vp-767 {
-    padding: 78px 0 0;
+    padding: 78px 0 40px;
   }
 
   h2 {

@@ -8,6 +8,7 @@ const toursSwiperLoop = loopDisabled;
 const trainingSwiperLoop = loopDisabled;
 const reviewsSwiperLoop = loopDisabled;
 const advantagesSwiperLoop = loopDisabled;
+const gallerySwiperLoop = loopDisabled;
 
 let desktop = window.matchMedia('(min-width: 1200px)');
 let advantagesSwiper;
@@ -90,11 +91,33 @@ const advantagesSwiperOptions = {
   slidesPerView: 3,
 };
 
+const gallerySwiperOptions = {
+  loop: gallerySwiperLoop,
+  navigation: {
+    nextEl: '[data-swiper="gallery-container"] [data-swiper="button-next"]',
+    prevEl: '[data-swiper="gallery-container"] [data-swiper="button-prev"]',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 5,
+    },
+  },
+};
+
 
 const heroSwiper = new swiper('[data-swiper="hero"]', heroSwiperOptions);
 const toursSwiper = new swiper('[data-swiper="tours"]', toursSwiperOptions);
 const trainingSwiper = new swiper('[data-swiper="training"]',  trainingSwiperOptions);
 const reviewsSwiper = new swiper('[data-swiper="reviews"]',  reviewsSwiperOptions);
+const gallerySwiper = new swiper('[data-swiper="gallery"]',  gallerySwiperOptions);
 
 function handleSwiper() {
   if (desktop.matches) {
@@ -115,4 +138,4 @@ function initSwiper(swiperInstance) {
   swiperInstance.init();
 }
 
-export {initSwiper, heroSwiper, toursSwiper, trainingSwiper, reviewsSwiper, handleSwiper};
+export {initSwiper, heroSwiper, toursSwiper, trainingSwiper, reviewsSwiper, handleSwiper, gallerySwiper};
