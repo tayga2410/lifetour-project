@@ -8,7 +8,7 @@ const toursSwiperLoop = loopDisabled;
 const trainingSwiperLoop = loopDisabled;
 const reviewsSwiperLoop = loopDisabled;
 const advantagesSwiperLoop = loopDisabled;
-const gallerySwiperLoop = loopDisabled;
+const gallerySwiperLoop = loopEnabled;
 
 let desktop = window.matchMedia('(min-width: 1200px)');
 let advantagesSwiper;
@@ -100,13 +100,14 @@ const gallerySwiperOptions = {
   breakpoints: {
     320: {
       slidesPerView: 2,
+      spaceBetween: 3,
     },
     768: {
       slidesPerView: 3,
       spaceBetween: 5,
     },
     1200: {
-      slidesPerView: 5,
+      slidesPerView: 'auto',
       spaceBetween: 5,
     },
   },
