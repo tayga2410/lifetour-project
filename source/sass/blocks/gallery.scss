@@ -156,18 +156,153 @@
   right: 0;
 }
 
-.gallery__swiper {
+.gallery__slide--first-slide {
+  max-width: 275px;
+
+  @include vp-1199 {
+    max-width: 338px;
+  }
+
+  @include vp-1023 {
+    max-width: 252px;
+  }
+
+  img {
+    min-height: 450px;
+
+    @include vp-1199 {
+      min-width: 338px;
+    }
+
+    @include vp-1023 {
+      min-width: 252px;
+    }
+
+    @include vp-767 {
+      min-height: 260px;
+      min-width: 158px;
+    }
+  }
 }
 
-.gallery__slide  {
+.gallery__slide--third-slide {
+  max-width: 272px;
+
+  @include vp-1199 {
+    max-width: 338px;
+  }
+
+  @include vp-1023 {
+    max-width: 252px;
+  }
+
+  @include vp-767 {
+    max-width: 158px;
+  }
+
+  img {
+    min-height: 450px;
+
+    @include vp-1199 {
+      min-width: 338px;
+    }
+
+    @include vp-1023 {
+      min-width: 252px;
+    }
+
+    @include vp-767 {
+      min-height: 260px;
+      min-width: 158px;
+    }
+  }
 }
 
-.gallery__image-group {
+.gallery__slide--fifth-slide {
+  max-width: 276px;
+
+  @include vp-1199 {
+    max-width: 338px;
+  }
+
+  @include vp-1023 {
+    max-width: 252px;
+  }
+
+  @include vp-767 {
+    max-width: 158px;
+  }
+
+  img {
+    min-height: 450px;
+
+    @include vp-1199 {
+      min-width: 338px;
+    }
+
+    @include vp-1023 {
+      min-width: 252px;
+    }
+
+    @include vp-767 {
+      min-height: 260px;
+      min-width: 158px;
+    }
+  }
+}
+
+.gallery__slide--double-image {
+  min-width: 298px;
+
+  @include vp-1199 {
+    min-width: 338px;
+  }
+
+  @include vp-1023 {
+    min-width: 252px;
+  }
+
+  @include vp-767 {
+    min-width: 158px;
+  }
+
+  img {
+    @include vp-1199 {
+      min-width: 338px;
+    }
+
+    @include vp-1023 {
+      min-width: 252px;
+    }
+
+    @include vp-767 {
+      min-width: 158px;
+    }
+  }
+}
+
+.gallery__image-group-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
 
   @include vp-767 {
     gap: 3px;
+  }
+}
+
+.gallery__image-group--first-image {
+  min-height: 179px;
+
+  @include vp-767 {
+    min-height: 100px;
+  }
+}
+
+.gallery__image-group--second-image {
+  min-height: 265px;
+
+  @include vp-767 {
+    min-height: 157px;
   }
 }

@@ -107,7 +107,7 @@ const gallerySwiperOptions = {
       spaceBetween: 5,
     },
     1200: {
-      slidesPerView: 'auto',
+      slidesPerView: 5,
       spaceBetween: 5,
     },
   },
