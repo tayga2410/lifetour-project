@@ -91,8 +91,15 @@ export class Form {
     form.noValidate = true;
 
     form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      this._onFormSubmit(event, callback);
+      if (this.validateForm(event.target)) {
+        if (this.isEmailAndPhoneValid(event.target)) {
+          this._onFormSubmit(event, callback);
+        } else {
+          event.preventDefault();
+        }
+      } else {
+        event.preventDefault();
+      }
     });
 
     form.addEventListener('input', (event) => {
@@ -104,8 +111,14 @@ export class Form {
     });
   }
 
+  isEmailAndPhoneValid(form) {
+    const emailInput = form.querySelector('[name="E-mail"]');
+    const phoneInput = form.querySelector('[name="phone"]');
+    return emailInput.value.trim() !== '' && phoneInput.value.trim() !== '';
+  }
+
   init() {
-    this._validateParent = document.querySelectorAll('[data-form-validate]');
+    this._validateParent = document.querySelectorAll('[data-form-validate="data-form-validate"]');
     if (!this._validateParent.length) {
       return;
     }

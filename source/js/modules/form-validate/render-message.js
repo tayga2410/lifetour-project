@@ -3,20 +3,21 @@ export class Message {
     this._baseErrorText = 'Это поле является обязательным';
   }
 
-  _messageTemplate(message, state) {
-    const cssClass = state === 'valid' ? 'is-valid' : 'is-invalid';
-    return `<span class="input-message ${cssClass}">${message}</span>`;
-  }
-
   removeMessage(parent) {
-    const parentMessage = parent.querySelector('.input-message');
-    if (parentMessage) {
-      parentMessage.remove();
+    const formInput = parent.querySelector('.form__input');
+    if (formInput) {
+      formInput.style.outline = '';
     }
   }
 
-  renderMessage(parent, message, state) {
+  renderMessage(parent, validationState) {
     this.removeMessage(parent);
-    parent.insertAdjacentHTML('beforeend', this._messageTemplate(message, state));
+
+    const formInput = parent.querySelector('.form__input');
+    if (formInput) {
+      if (validationState === 'is-invalid') {
+        formInput.style.outline = '5px solid #FF121F';
+      }
+    }
   }
 }

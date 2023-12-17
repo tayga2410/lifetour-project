@@ -16,8 +16,9 @@
 
   &:disabled {
     opacity: 0.5;
-
+    cursor: not-allowed;
     pointer-events: none;
+    outline: none;
   }
 
   @include hover-focus {
