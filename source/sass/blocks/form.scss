@@ -1,13 +1,21 @@
+.form {
+  min-height: 760px;
+
+  @include vp-1199 {
+    min-height: 680px;
+  }
+
+  @include vp-767 {
+    min-height: 620px;
+  }
+
+}
+
 .form__container {
-  padding: 0;
   position: relative;
+  padding: 0;
   color: $color-default-white;
   text-align: center;
-
-  img {
-    position: absolute;
-    z-index: -1;
-  }
 
   h2 {
     font-size: 35px;
@@ -26,7 +34,7 @@
     @include vp-767 {
       font-size: 22px;
       line-height: 22px;
-      padding: 171px 0 0;
+      padding: 174px 0 0;
       margin: 0 0 19px;
     }
   }
@@ -48,6 +56,23 @@
       margin: 0 auto 20px;
     }
   }
+
+
+  img {
+    position: absolute;
+    z-index: -1;
+    height: 760px;
+
+    @include vp-1199 {
+     height: 680px;
+    }
+
+    @include vp-767 {
+      height: 620px;
+    }
+
+  }
+
 }
 
 .form__input-container {
@@ -148,5 +173,22 @@ input:disabled::placeholder {
     width: 290px;
     min-height: 58px;
     padding: 19px 21px;
+  }
+
+  @include hover-focus {
+    border: 1px solid #1c3374;
+    background-color: $color-default-white;
+    color: #1c3374;
+  }
+
+  @include active {
+    background-color: #1c3374;
+  }
+
+  @include disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
   }
 }

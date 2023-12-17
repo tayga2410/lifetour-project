@@ -124,13 +124,11 @@ function handleSwiper() {
   if (desktop.matches) {
     if (!advantagesSwiper) {
       advantagesSwiper = new swiper('[data-swiper="advantages"]', advantagesSwiperOptions);
-      console.log('Свайпер включен');
     }
   } else {
     if (advantagesSwiper) {
       advantagesSwiper.destroy();
       advantagesSwiper = null;
-      console.log('Свайпер отключен');
     }
   }
 }
