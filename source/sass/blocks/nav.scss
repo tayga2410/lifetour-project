@@ -4,7 +4,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   color: $color-default-white;
-  padding: 32px 20px;
+  padding: 43px 20px 41px 52px;
   width: 1200px;
   position: absolute;
   top: 0;
@@ -13,12 +13,12 @@
   z-index: 3;
 
   @include vp-1199 {
-    padding: 12px 45px 8px;
+    padding: 21px 45px 19px;
     width: 100%;
   }
 
   @include vp-767 {
-    padding: 0px 15px 24px;
+    padding: 15px 15px 13px 14px;
   }
 
   &--is-opened {
@@ -33,7 +33,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
-  z-index: 3;
+  z-index: 4;
 
   &--is-opened {
     color: #2d383f;
@@ -63,11 +63,12 @@
 .nav__list {
   display: flex;
   list-style-type: none;
-  gap: 30px;
+  gap: 29px;
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  width: 572px;
+  width: 543px;
+  padding: 0;
 
   @include vp-1199 {
     display: none;
@@ -144,6 +145,10 @@
     order: 2;
   }
 
+  @include vp-767 {
+    margin: 0 0 16px 0;
+  }
+
   svg {
     color: $color-default-white;
   }
@@ -177,6 +182,7 @@
   }
 
   @include vp-767 {
-    margin: 0;
+    margin: 0 50px 0 0;
+    align-self: flex-start;
   }
 }

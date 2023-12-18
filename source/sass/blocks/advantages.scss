@@ -45,6 +45,8 @@
   @include vp-767 {
     font-size: 26px;
     line-height: 26px;
+    top: 74px;
+    left: 19%;
   }
 }
 
@@ -205,16 +207,74 @@
 }
 
 .advantages__line-breaker-1 {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.advantages__line-breaker-2 {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.advantages__line-breaker-3 {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.advantages__line-breaker-4 {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.advantages__line-breaker-5 {
+  display: none;
+  @include vp-1199 {
+    display: block;
+  }
+
   @include vp-767 {
     display: none;
   }
 }
 
-.advantages__line-breaker-2 {
-  display: none;
-
+.advantages__line-breaker-6 {
   @include vp-767 {
     display: block;
+  }
+}
+
+.advantages__line-breaker-7 {
+  display: none;
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 

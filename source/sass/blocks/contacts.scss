@@ -15,11 +15,13 @@
   gap: 37px;
   padding: 0;
   margin: 0 0 127px;
+  max-width: 500px;
 
   @include vp-1199 {
     flex-direction: row;
     gap: 39px;
     margin: 0 0 40px;
+    max-width: 681px;
   }
 
   @include vp-767 {

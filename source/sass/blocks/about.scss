@@ -1,14 +1,14 @@
 .about {
-    padding: 0 0 135px;
+  padding: 0 0 135px;
 
-    @media (max-width: $vp-768) {
-      padding: 0 0 54px;
-    }
-
-    @include vp-767 {
-      padding: 0 0 31px;
-    }
+  @media (max-width: $vp-768) {
+    padding: 0 0 54px;
   }
+
+  @include vp-767 {
+    padding: 0 0 31px;
+  }
+}
 
 .about__container {
   position: relative;
@@ -148,10 +148,79 @@
       line-height: 20px;
     }
   }
+}
 
-  br {
-    @include vp-1199 {
-      display: none;
-    }
+.about__line-breaker-1 {
+  display: none;
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__line-breaker-2 {
+  display: none;
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__line-breaker-3 {
+  display: none;
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__line-breaker-4 {
+  display: none;
+  @include vp-1199 {
+    display: block;
+  }
+}
+
+.about__line-breaker-5 {
+  display: none;
+  @include vp-1199 {
+    display: block;
+  }
+}
+
+.about__line-breaker-6 {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.about__line-breaker-7 {
+  display: none;
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__line-breaker-8 {
+  display: none;
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
