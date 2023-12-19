@@ -77,6 +77,22 @@
   }
 }
 
+.training__clouds {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  bottom: -169px;
+  right: 0;
+
+  @include vp-1199 {
+    bottom: -58px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
 .training__title-shadow {
   font-size: 55px;
   font-style: normal;
@@ -172,7 +188,6 @@
   @include vp-1199 {
     margin: 0 auto 26px;
     max-width: 768px;
-
   }
 
   @include vp-767 {
@@ -188,6 +203,7 @@
   border: 1px solid rgba(2, 102, 193, 0.1);
   display: flex;
   flex-wrap: wrap;
+  background-color: $color-default-white;
 
   @include vp-767 {
     max-width: 320px;

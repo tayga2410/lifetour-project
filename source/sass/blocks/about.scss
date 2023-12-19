@@ -1,5 +1,6 @@
 .about {
   padding: 0 0 135px;
+  position: relative;
 
   @media (max-width: $vp-768) {
     padding: 0 0 54px;
@@ -9,6 +10,8 @@
     padding: 0 0 31px;
   }
 }
+
+
 
 .about__container {
   position: relative;

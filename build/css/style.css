@@ -1579,7 +1579,7 @@ button.swiper-pagination-bullet {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  gap: 29px;
+  gap: 31px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2137,6 +2137,15 @@ button.swiper-pagination-bullet {
   z-index: -1;
 }
 
+@media (max-width: 1199px) {
+  .hero__line-breaker {
+    display: none;
+  }
+}
+
+.tours {
+  position: relative;
+}
 .tours h2 {
   font-size: 35px;
   font-weight: 800;
@@ -2191,6 +2200,20 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) {
   .tours__container {
     padding-bottom: 34px;
+  }
+}
+
+.tours__clouds {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+}
+@media (max-width: 767px) {
+  .tours__clouds {
+    width: 171px;
+    height: 595px;
+    top: 110px;
   }
 }
 
@@ -2562,6 +2585,24 @@ button.swiper-pagination-bullet {
   }
 }
 
+.training__clouds {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  bottom: -169px;
+  right: 0;
+}
+@media (max-width: 1199px) {
+  .training__clouds {
+    bottom: -58px;
+  }
+}
+@media (max-width: 767px) {
+  .training__clouds {
+    display: none;
+  }
+}
+
 .training__title-shadow {
   font-size: 55px;
   font-style: normal;
@@ -2700,6 +2741,7 @@ button.swiper-pagination-bullet {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #ffffff;
 }
 @media (max-width: 767px) {
   .training__slide {
@@ -2941,6 +2983,7 @@ button.swiper-pagination-bullet {
 
 .about {
   padding: 0 0 135px;
+  position: relative;
 }
 @media (max-width: 768px) {
   .about {
@@ -3367,6 +3410,7 @@ button.swiper-pagination-bullet {
       flex-shrink: 0;
   margin: 0 120px 0 0;
   min-height: 293px;
+  background-color: #ffffff;
 }
 @media (max-width: 1199px) {
   .reviews__slide {
@@ -3466,6 +3510,46 @@ button.swiper-pagination-bullet {
   font-size: 12px;
   font-weight: 300;
   line-height: 100%;
+}
+
+.advantages {
+  position: relative;
+  overflow: hidden;
+}
+
+.advantages__big-clouds {
+  position: absolute;
+  z-index: -1;
+  top: -187px;
+  left: -619px;
+}
+@media (max-width: 1199px) {
+  .advantages__big-clouds {
+    top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__big-clouds {
+    display: none;
+  }
+}
+
+.advantages__small-clouds {
+  position: absolute;
+  z-index: -1;
+  top: 34px;
+  right: -249px;
+}
+@media (max-width: 1199px) {
+  .advantages__small-clouds {
+    top: 656px;
+    right: -68px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__small-clouds {
+    display: none;
+  }
 }
 
 .advantages__container {
@@ -3574,6 +3658,7 @@ button.swiper-pagination-bullet {
   text-align: center;
   max-width: 380px;
   min-height: 329px;
+  background-color: #ffffff;
 }
 @media (max-width: 1199px) {
   .advantages__slide {

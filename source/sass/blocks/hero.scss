@@ -359,3 +359,10 @@
   border: none;
   z-index: -1;
 }
+
+.hero__line-breaker {
+
+  @include vp-1199 {
+    display: none;
+  }
+}
