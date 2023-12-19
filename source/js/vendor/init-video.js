@@ -46,6 +46,7 @@ function createIframe(id) {
   iframe.setAttribute("allowfullscreen", "");
   iframe.setAttribute("allow", "autoplay");
   iframe.setAttribute("src", generateURL(id));
+  iframe.setAttribute("loading", "lazy");
   iframe.classList.add("hero__iframe");
 
   iframe.style.zIndex = 10;

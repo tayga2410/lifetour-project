@@ -33,23 +33,9 @@
   clip-path: inset(100%);
 }
 
-.scroll-lock-ios {
-  position: fixed;
-
-  overflow: hidden;
-}
-
 .scroll-lock {
+  position: fixed;
   overflow: hidden;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

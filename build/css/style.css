@@ -69,6 +69,7 @@ html {
   line-height: 24px;
   font-family: "Montserrat", "Arial", sans-serif;
   color: #2D383F;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -217,21 +218,9 @@ button,
           clip-path: inset(100%);
 }
 
-.scroll-lock-ios {
+.scroll-lock {
   position: fixed;
   overflow: hidden;
-}
-
-.scroll-lock {
-  overflow: hidden;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -854,7 +843,7 @@ template {
   position: absolute;
   width: 37px;
   height: 35px;
-  z-index: 11;
+  z-index: 1;
   background-color: #0266C1;
 }
 
@@ -2098,6 +2087,9 @@ button.swiper-pagination-bullet {
     display: none;
   }
 }
+.hero__vidget-wrapper iframe {
+  display: none;
+}
 
 .hero__vidget-button {
   width: 47px;
@@ -2111,7 +2103,7 @@ button.swiper-pagination-bullet {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 5;
+  z-index: 6;
   cursor: pointer;
   font-size: 0;
 }

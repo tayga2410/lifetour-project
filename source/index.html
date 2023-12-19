@@ -24,16 +24,16 @@
         <nav class="nav nav--is-closed" data-menu="layer">
           <div class="nav__logo nav__logo--is-closed" data-menu="menu-logo" alt="логотип Lifetour">
             <svg width="142" height="42">
-              <use href="img/sprite.svg#logotype-mobile"></use>
+              <use href="img/sprite.svg#logotype-header"></use>
             </svg>
           </div>
           <ul class="nav__list nav__list--is-closed" data-menu="menu">
-            <li class="nav__item"><a class="nav__link" href="#">Туры</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Обучение</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Фотографии</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#tours">Туры</a></li>
+            <li class="nav__item"><a class="nav__link" href="#training">Обучение</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#gallery">Фотографии</a></li>
+            <li class="nav__item"><a class="nav__link" href="#footer">Контакты</a></li>
           </ul>
           <a class="nav__telephone nav__telephone--is-closed" href="tel:8-800-725-32-32"
             data-menu="menu-telephone">8 800 725-32-32</a>
@@ -181,14 +181,16 @@
                       </svg>Лёгкая сложность</span>
                   </div>
                 </div>
-                <div class="hero__vidget-wrapper" data-vidget="audio-container">
-                  <a class="hero__vidget-link" href="https://music.yandex.ru/album/25474374">
-                    <picture>
-                      <img src="img/hero/vidget-overlay.jpg" srcset="img/vidget-overlay@2x.jpg 2x"
-                        alt="виджет для яндекс музыки" width="340" height="220" data-vidget="audio-media">
-                    </picture>
-                  </a>
-                  <button class="hero__vidget-button button" data-vidget="button">запуск видео</button>
+                <div class="hero__vidget-wrapper">
+                  <picture>
+                    <img src="img/hero/vidget-overlay.jpg" srcset="img/vidget-overlay@2x.jpg 2x"
+                      alt="виджет для яндекс музыки" width="340" height="220">
+                  </picture>
+
+                  <button class="hero__vidget-button button">запуск видео</button>
+                  <iframe frameborder="0" style="border:none;width:340px;height:220px;" width="340" height="220"
+                    src="https://music.yandex.ru/iframe/album/25474374">Слушайте <a
+                      href='https://music.yandex.ru/album/25474374'>Про код</a> на Яндекс Музыке</iframe>
                 </div>
               </div>
             </div>
@@ -197,7 +199,7 @@
         </section>
     </div>
 
-    <section class="tours" data-test="tours">
+    <section class="tours" data-test="tours" id="tours">
 
       <div class="tours__container container" data-swiper="tours-container">
         <div class="tours__clouds">
@@ -442,7 +444,7 @@
       </div>
     </section>
 
-    <section class="training" data-test="training">
+    <section class="training" data-test="training" id="training">
       <div class="training__container container" data-swiper="training-container">
         <div class="training__clouds">
           <picture>
@@ -638,7 +640,7 @@
       </div>
     </section>
 
-    <section class="about" data-test="about">
+    <section class="about" data-test="about" id="about">
 
       <div class="about__container container">
 
@@ -683,7 +685,7 @@
 
     </section>
 
-    <section class="reviews" data-test="reviews">
+    <section class="reviews" data-test="reviews" id="reviews">
       <div class="reviews__container container" data-swiper="reviews-container">
         <h2>Отзывы</h2>
         <span class="reviews__title-shadow">Отзывы</span>
@@ -904,7 +906,7 @@
       </div>
     </section>
 
-    <section class="gallery" data-test="gallery">
+    <section class="gallery" data-test="gallery" id="gallery">
       <div class="gallery__container container" data-swiper="gallery-container">
         <h2>Фотогалерея</h2>
         <span class="gallery__title-shadow">Фотогалерея</span>
@@ -1109,7 +1111,7 @@
     </section>
 
     </main>
-    <footer class="footer" data-test="footer">
+    <footer class="footer" data-test="footer" id="footer">
       <div class="footer__container container">
         <div class="footer__text-wrapper">
           <h2>Контакты</h2>
@@ -1159,16 +1161,16 @@
           <nav class="add-nav">
             <div class="add-nav__logo" alt="логотип Lifetour">
               <svg width="200" height="62">
-                <use href="img/sprite.svg#logotype"></use>
+                <use href="img/sprite.svg#logotype-footer"></use>
               </svg>
             </div>
             <ul class="add-nav__list">
-              <li class="add-nav__item add-nav__item--tours"><a class="add-nav__link" href="#">Туры</a></li>
-              <li class="add-nav__item add-nav__item--learning"><a class="add-nav__link" href="#">Обучение</a></li>
-              <li class="add-nav__item add-nav__item--about"><a class="add-nav__link" href="#">О нас</a></li>
-              <li class="add-nav__item add-nav__item--reviews"><a class="add-nav__link" href="#">Отзывы</a></li>
-              <li class="add-nav__item add-nav__item--photos"><a class="add-nav__link" href="#">Фотографии</a></li>
-              <li class="add-nav__item add-nav__item--contacts"><a class="add-nav__link" href="#">Контакты</a></li>
+              <li class="add-nav__item add-nav__item--tours"><a class="add-nav__link" href="#tours">Туры</a></li>
+              <li class="add-nav__item add-nav__item--learning"><a class="add-nav__link" href="#training">Обучение</a></li>
+              <li class="add-nav__item add-nav__item--about"><a class="add-nav__link" href="#about">О нас</a></li>
+              <li class="add-nav__item add-nav__item--reviews"><a class="add-nav__link" href="#reviews">Отзывы</a></li>
+              <li class="add-nav__item add-nav__item--photos"><a class="add-nav__link" href="#gallery">Фотографии</a></li>
+              <li class="add-nav__item add-nav__item--contacts"><a class="add-nav__link" href="#footer">Контакты</a></li>
             </ul>
             <a class="add-nav__telephone" href="tel:8-800-725-32-32">8 800 725-32-32</a>
           </nav>
