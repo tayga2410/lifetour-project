@@ -25,7 +25,7 @@
   padding: 200px 120px 80px;
 
   @include vp-1199 {
-    padding: 212px 45px 487px 45px;
+    padding: 212px 45px 487px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,7 +241,7 @@
   border-color: transparent transparent transparent $color-default-black;
 }
 
-.hero_iframer-button:disabled::after {
+.hero__iframe-button:disabled::after {
   border-color: transparent transparent transparent #0266c1;
   cursor: not-allowed;
   pointer-events: none;
@@ -365,7 +365,6 @@
 }
 
 .hero__line-breaker {
-
   @include vp-1199 {
     display: none;
   }

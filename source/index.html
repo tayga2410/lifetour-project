@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Организация походов в горы">
@@ -17,187 +17,185 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div data-test="hero">
-      <header>
-        <h1 class="visually-hidden">Запоминающиеся приключения с компанией Lifetour</h1>
-        <nav class="nav nav--is-closed" data-menu="layer">
-          <div class="nav__logo nav__logo--is-closed" data-menu="menu-logo" alt="логотип Lifetour">
-            <svg width="142" height="42">
-              <use href="img/sprite.svg#logotype-header"></use>
-            </svg>
-          </div>
-          <ul class="nav__list nav__list--is-closed" data-menu="menu">
-            <li class="nav__item"><a class="nav__link" href="#tours">Туры</a></li>
-            <li class="nav__item"><a class="nav__link" href="#training">Обучение</a></li>
-            <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
-            <li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
-            <li class="nav__item"><a class="nav__link" href="#gallery">Фотографии</a></li>
-            <li class="nav__item"><a class="nav__link" href="#footer">Контакты</a></li>
-          </ul>
-          <a class="nav__telephone nav__telephone--is-closed" href="tel:8-800-725-32-32"
-            data-menu="menu-telephone">8 800 725-32-32</a>
-          <button class="nav__burger-menu-button nav__burger-menu-button--is-closed" data-menu="button"> <svg
-              data-menu="menu-is-closed" width="26" height="26">
-              <use href="img/sprite.svg#burger-menu"></use>
-            </svg><svg data-menu="menu-is-opened" width="26" height="26">
-              <use href="img/sprite.svg#cross-close-icon"></use>
-            </svg></button>
+  <div data-test="hero">
+    <header>
+      <h1 class="visually-hidden">Запоминающиеся приключения с компанией Lifetour</h1>
+      <nav class="nav nav--is-closed" data-menu="layer">
+        <div class="nav__logo nav__logo--is-closed" data-menu="menu-logo">
+          <svg width="142" height="42">
+            <use href="img/sprite.svg#logotype-header"></use>
+          </svg>
+        </div>
+        <ul class="nav__list nav__list--is-closed" data-menu="menu">
+          <li class="nav__item"><a class="nav__link" href="#tours">Туры</a></li>
+          <li class="nav__item"><a class="nav__link" href="#training">Обучение</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#gallery">Фотографии</a></li>
+          <li class="nav__item"><a class="nav__link" href="#footer">Контакты</a></li>
+        </ul>
+        <a class="nav__telephone nav__telephone--is-closed" href="tel:8-800-725-32-32"
+          data-menu="menu-telephone">8 800 725-32-32</a>
+        <button class="nav__burger-menu-button nav__burger-menu-button--is-closed" data-menu="button" type="button">бургер меню<svg
+            data-menu="menu-is-closed" width="26" height="26">
+            <use href="img/sprite.svg#burger-menu"></use>
+          </svg><svg data-menu="menu-is-opened" width="26" height="26">
+            <use href="img/sprite.svg#cross-close-icon"></use>
+          </svg></button>
 
-        </nav>
-        <div class="overlay" data-menu="menu-overlay"></div>
+      </nav>
+      <div class="overlay" data-menu="menu-overlay"></div>
 
-      </header>
-      <main>
-        <section class="hero">
-          <div class="swiper hero__swiper" data-swiper="hero">
-            <div class="swiper-wrapper hero__swiper-wrapper">
-              <div class="swiper-slide hero__slide">
-                <div class="hero__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/hero/slider-image-1-tablet.webp 1x, img/hero/slider-image-1-mobile@2x.webp 2x">
-                    <source type="image/png" media="(max-width: 767px)"
-                      srcset="img/hero/slider-image-1-tablet.png 1x, img/hero/slider-image-1-mobile@2x.png 2x">
-                    <source type="image/webp" media="(max-width: 1199px)"
-                      srcset="img/hero/slider-image-1-tablet.webp 1x,img/hero/slider-image-1-tablet@2x.webp 2x">
-                    <source type="image/png" media="(max-width: 1199px)"
-                      srcset="img/hero/slider-image-1-tablet.png 1x, img/hero/slider-image-1-tablet@2x.png 2x">
-                    <img src="img/hero/slider-image-1-desktop.png" srcset="img/hero/slider-image-1-desktop2x.png 2x"
-                      width="1440" height="800" alt="Захватывающие вершины Кавказа">
-                  </picture>
-                </div>
-                <div class="hero__content-wrapper">
-                  <h2>Захватывающие вершины Кавказа</h2>
-                  <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
-                    горы
-                    Чегет.</p>
-                  <button class="hero__button button" type="button">Смотреть тур</button>
-                  <div class="hero__details">
-                    <span class="hero__duration">
-                      <svg width="12" height="12">
-                        <use href="img/sprite.svg#moon-icon"></use>
-                      </svg>6 дней/5 ночей</span>
-                    <span class="hero__complexity">
-                      <svg width="12" height="12">
-                        <use href="img/sprite.svg#level-icon"></use>
-                      </svg>Высокая сложность</span>
-                  </div>
-                </div>
-                <div class="hero__iframe-wrapper" data-video="video-container">
-                  <a class="hero__iframe-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy"
-                    data-video="video-link" aria-label="видео Академии">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1199px)"
-                        srcset="img/hero/iframe-image-tablet.webp 1x, img/hero/iframe-image-tablet@2x.webp 2x">
-                      <source type="image/jpg" media="(max-width: 1199px)"
-                        srcset="img/hero/iframe-image-tablet.jpg 1x, img/hero/iframe-image-tablet@2x.jpg 2x">
-                      <img src="img/hero/iframe-image-desktop.jpg" srcset="img/hero/iframe-image-desktop@2x.jpg 2x"
-                        width="482" height="317" alt="видео Академии" data-video="video-media">
-                    </picture>
-                  </a>
-                  <button class="hero__iframe-button" data-video="button">запустить видео</button>
-                </div>
-              </div>
-              <div class="swiper-slide hero__slide">
-                <div class="hero__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/hero/slider-image-2-tablet.webp 1x,img/hero/slider-image-2-mobile@2x.webp 2x">
-                    <source type="image/png" media="(max-width: 767px)"
-                      srcset="img/hero/slider-image-2-tablet.png 1x, img/hero/slider-image-2-mobile@2x.png 2x">
-                    <source type="image/webp" media="(max-width: 1199px)"
-                      srcset="img/hero/slider-image-2-tablet.webp 1x, img/hero/slider-image-2-tablet@2x.webp 2x">
-                    <source type="image/png" media="(max-width: 1199px)"
-                      srcset="img/hero/slider-image-2-tablet.png 1x, img/hero/slider-image-2-tablet@2x.png 2x">
-                    <img src="img/hero/slider-image-2-desktop.png" srcset="img/hero/slider-image-2-desktop@2x.png 2x"
-                      width="1440" height="800" alt="невероятная природа Камчатки">
-                  </picture>
-                </div>
-                <div class="hero__content-wrapper">
-                  <h2>Невероятная
-                    природа Камчатки</h2>
-                  <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
-                    нетронутых уголков дикой природы в мире.</p>
-                  <button class="hero__button button" type="button">Смотреть тур</button>
-                  <div class="hero__details">
-                    <span class="hero__duration"><svg width="12" height="12">
-                        <use href="img/sprite.svg#moon-icon"></use>
-                      </svg>9 дней/10 ночей</span>
-                    <span class="hero__complexity"><svg width="12" height="12">
-                        <use href="img/sprite.svg#level-icon"></use>
-                      </svg>Средняя сложность</span>
-                  </div>
-                </div>
-                <div class="hero__photo-container-1">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1199px)"
-                      srcset="img/hero/hero-slider-photo-1-tablet.webp 1x, img/hero/hero-slider-photo-1-tablet@2x.webp 2x">
-                    <source type="image/png" media="(max-width: 1199px)"
-                      srcset="img/hero/hero-slider-photo-1-tablet.png 1x, img/hero/hero-slider-photo-1-tablet@2x.png 2x">
-                    <img src="img/hero/hero-slider-photo-1-desktop.png"
-                      srcset="img/hero/hero-slider-photo-1-desktop@2x.png 2x" alt="фотокарточка Камчатского края"
-                      width="308" height="407">
-                  </picture>
-                </div>
-                <div class="hero__photo-container-2">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1199px)"
-                      srcset="img/hero/hero-slider-photo-2-tablet.webp 1x, img/hero/hero-slider-photo-2-tablet@2x.webp 2x">
-                    <source type="image/png" media="(max-width: 1199px)"
-                      srcset="img/hero/hero-slider-photo-2-tablet.png 1x, img/hero/hero-slider-photo-2-tablet@2x.png 2x">
-                    <img src="img/hero/hero-slider-photo-2-desktop.png"
-                      srcset="img/hero/hero-slider-photo-2-desktop@2x.png 2x" alt="отокарточка Камчатского края"
-                      width="277" height="366">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide hero__slide">
-                <div class="hero__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)"
-                      srcset="img/hero/slider-image-3-tablet.webp 1x, img/hero/slider-image-3-mobile@2x.webp 2x">
-                    <source type="image/png" media="(max-width: 767px)"
-                      srcset="img/hero/slider-image-3-tablet.png 1x, img/hero/slider-image-3-mobile@2x.png 2x">
-                    <source type="image/webp" media="(max-width: 1199px)"
-                      srcset="img/hero/slider-image-3-tablet.webp 1x, img/hero/slider-image-3-tablet@2x.webp 2x">
-                    <source type="image/png" media="(max-width: 1199px)"
-                      srcset="img/hero/slider-image-3-tablet.png 1x, img/hero/slider-image-3-tablet@2x.png 2x">
-                    <img src="img/hero/slider-image-3-desktop.png" srcset="img/hero/slider-image-3-desktop@2x.png 2x"
-                      width="1440" height="800" alt="Магические пейзажи Алтайского Края">
-                  </picture>
-                </div>
-                <div class="hero__content-wrapper">
-                  <h2>Магические пейзажи Алтайского Края</h2>
-                  <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
-                    дух ландшафтов Алтайских гор.</p>
-                  <button class="hero__button button" type="button">Смотреть тур</button>
-                  <div class="hero__details">
-                    <span class="hero__duration"><svg width="12" height="12">
-                        <use href="img/sprite.svg#moon-icon"></use>
-                      </svg>8 дней/7 ночей</span>
-                    <span class="hero__complexity"><svg width="12" height="12">
-                        <use href="img/sprite.svg#level-icon"></use>
-                      </svg>Лёгкая сложность</span>
-                  </div>
-                </div>
-                <div class="hero__vidget-wrapper">
-                  <picture>
-                    <img src="img/hero/vidget-overlay.jpg" srcset="img/vidget-overlay@2x.jpg 2x"
-                      alt="виджет для яндекс музыки" width="340" height="220">
-                  </picture>
-
-                  <button class="hero__vidget-button button">запуск видео</button>
-                  <iframe frameborder="0" style="border:none;width:340px;height:220px;" width="340" height="220"
-                    src="https://music.yandex.ru/iframe/album/25474374">Слушайте <a
-                      href='https://music.yandex.ru/album/25474374'>Про код</a> на Яндекс Музыке</iframe>
-                </div>
+    </header>
+    <section class="hero">
+      <div class="swiper hero__swiper" data-swiper="hero">
+        <div class="swiper-wrapper hero__swiper-wrapper">
+          <div class="swiper-slide hero__slide">
+            <div class="hero__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/hero/slider-image-1-tablet.webp 1x, img/hero/slider-image-1-mobile@2x.webp 2x">
+                <source type="image/png" media="(max-width: 767px)"
+                  srcset="img/hero/slider-image-1-tablet.png 1x, img/hero/slider-image-1-mobile@2x.png 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/hero/slider-image-1-tablet.webp 1x,img/hero/slider-image-1-tablet@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1199px)"
+                  srcset="img/hero/slider-image-1-tablet.png 1x, img/hero/slider-image-1-tablet@2x.png 2x">
+                <img src="img/hero/slider-image-1-desktop.png" srcset="img/hero/slider-image-1-desktop2x.png 2x"
+                  width="1440" height="800" alt="Захватывающие вершины Кавказа">
+              </picture>
+            </div>
+            <div class="hero__content-wrapper">
+              <h2>Захватывающие вершины Кавказа</h2>
+              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
+                горы
+                Чегет.</p>
+              <button class="hero__button button" type="button">Смотреть тур</button>
+              <div class="hero__details">
+                <span class="hero__duration">
+                  <svg width="12" height="12">
+                    <use href="img/sprite.svg#moon-icon"></use>
+                  </svg>6 дней/5 ночей</span>
+                <span class="hero__complexity">
+                  <svg width="12" height="12">
+                    <use href="img/sprite.svg#level-icon"></use>
+                  </svg>Высокая сложность</span>
               </div>
             </div>
-            <div class="swiper-pagination hero__pagination" data-swiper="pagination"></div>
+            <div class="hero__iframe-wrapper" data-video="video-container">
+              <a class="hero__iframe-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy"
+                data-video="video-link" aria-label="видео Академии">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/hero/iframe-image-tablet.webp 1x, img/hero/iframe-image-tablet@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 1199px)"
+                    srcset="img/hero/iframe-image-tablet.jpg 1x, img/hero/iframe-image-tablet@2x.jpg 2x">
+                  <img src="img/hero/iframe-image-desktop.jpg" srcset="img/hero/iframe-image-desktop@2x.jpg 2x"
+                    width="482" height="317" alt="видео Академии" data-video="video-media">
+                </picture>
+              </a>
+              <button class="hero__iframe-button" data-video="button" type="button">запустить видео</button>
+            </div>
           </div>
-        </section>
-    </div>
+          <div class="swiper-slide hero__slide">
+            <div class="hero__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/hero/slider-image-2-tablet.webp 1x,img/hero/slider-image-2-mobile@2x.webp 2x">
+                <source type="image/png" media="(max-width: 767px)"
+                  srcset="img/hero/slider-image-2-tablet.png 1x, img/hero/slider-image-2-mobile@2x.png 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/hero/slider-image-2-tablet.webp 1x, img/hero/slider-image-2-tablet@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1199px)"
+                  srcset="img/hero/slider-image-2-tablet.png 1x, img/hero/slider-image-2-tablet@2x.png 2x">
+                <img src="img/hero/slider-image-2-desktop.png" srcset="img/hero/slider-image-2-desktop@2x.png 2x"
+                  width="1440" height="800" alt="невероятная природа Камчатки">
+              </picture>
+            </div>
+            <div class="hero__content-wrapper">
+              <h2>Невероятная
+                природа Камчатки</h2>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
+                нетронутых уголков дикой природы в мире.</p>
+              <button class="hero__button button" type="button">Смотреть тур</button>
+              <div class="hero__details">
+                <span class="hero__duration"><svg width="12" height="12">
+                    <use href="img/sprite.svg#moon-icon"></use>
+                  </svg>9 дней/10 ночей</span>
+                <span class="hero__complexity"><svg width="12" height="12">
+                    <use href="img/sprite.svg#level-icon"></use>
+                  </svg>Средняя сложность</span>
+              </div>
+            </div>
+            <div class="hero__photo-container-1">
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/hero/hero-slider-photo-1-tablet.webp 1x, img/hero/hero-slider-photo-1-tablet@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1199px)"
+                  srcset="img/hero/hero-slider-photo-1-tablet.png 1x, img/hero/hero-slider-photo-1-tablet@2x.png 2x">
+                <img src="img/hero/hero-slider-photo-1-desktop.png"
+                  srcset="img/hero/hero-slider-photo-1-desktop@2x.png 2x" alt="фотокарточка Камчатского края"
+                  width="308" height="407">
+              </picture>
+            </div>
+            <div class="hero__photo-container-2">
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/hero/hero-slider-photo-2-tablet.webp 1x, img/hero/hero-slider-photo-2-tablet@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1199px)"
+                  srcset="img/hero/hero-slider-photo-2-tablet.png 1x, img/hero/hero-slider-photo-2-tablet@2x.png 2x">
+                <img src="img/hero/hero-slider-photo-2-desktop.png"
+                  srcset="img/hero/hero-slider-photo-2-desktop@2x.png 2x" alt="отокарточка Камчатского края" width="277"
+                  height="366">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide hero__slide">
+            <div class="hero__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/hero/slider-image-3-tablet.webp 1x, img/hero/slider-image-3-mobile@2x.webp 2x">
+                <source type="image/png" media="(max-width: 767px)"
+                  srcset="img/hero/slider-image-3-tablet.png 1x, img/hero/slider-image-3-mobile@2x.png 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/hero/slider-image-3-tablet.webp 1x, img/hero/slider-image-3-tablet@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1199px)"
+                  srcset="img/hero/slider-image-3-tablet.png 1x, img/hero/slider-image-3-tablet@2x.png 2x">
+                <img src="img/hero/slider-image-3-desktop.png" srcset="img/hero/slider-image-3-desktop@2x.png 2x"
+                  width="1440" height="800" alt="Магические пейзажи Алтайского Края">
+              </picture>
+            </div>
+            <div class="hero__content-wrapper">
+              <h2>Магические пейзажи Алтайского Края</h2>
+              <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
+                дух ландшафтов Алтайских гор.</p>
+              <button class="hero__button button" type="button">Смотреть тур</button>
+              <div class="hero__details">
+                <span class="hero__duration"><svg width="12" height="12">
+                    <use href="img/sprite.svg#moon-icon"></use>
+                  </svg>8 дней/7 ночей</span>
+                <span class="hero__complexity"><svg width="12" height="12">
+                    <use href="img/sprite.svg#level-icon"></use>
+                  </svg>Лёгкая сложность</span>
+              </div>
+            </div>
+            <div class="hero__vidget-wrapper">
+              <picture>
+                <img src="img/hero/vidget-overlay.jpg" srcset="img/vidget-overlay@2x.jpg 2x"
+                  alt="виджет для яндекс музыки" width="340" height="220">
+              </picture>
+
+              <button class="hero__vidget-button button" type="button">запуск видео</button>
+              <iframe width="340" height="220"
+                src="https://music.yandex.ru/iframe/album/25474374" title="виджет яндекс музыки."></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination hero__pagination" data-swiper="pagination"></div>
+      </div>
+    </section>
+  </div>
+  <main>
 
     <section class="tours" data-test="tours" id="tours">
 
@@ -223,12 +221,12 @@
         <h2>Ближайшие туры</h2>
         <span class="tours__title-shadow">Ближайшие туры</span>
         <div class="tours__swiper-button-wrapper">
-          <button class="swiper-button-prev tours__button-prev" data-swiper="button-prev">
+          <button class="swiper-button-prev tours__button-prev" data-swiper="button-prev" type="button">
             <svg width="17" height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
             </svg>предыдущий слайд</button>
-          <button class="swiper-button-next tours__button-next" data-swiper="button-next"><svg width="17" height="12">
+          <button class="swiper-button-next tours__button-next" data-swiper="button-next" type="button"><svg width="17" height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
             </svg>следующий слайд
@@ -351,7 +349,7 @@
                       к Чёрному морю и обратно">
                 </picture>
               </div>
-              <div class="tours__content-wrapper tours__content-wrapper">
+              <div class="tours__content-wrapper">
                 <div class="tours__information-wrapper">
                   <span class="tours__location"><svg width="16" height="16">
                       <use href="img/sprite.svg#location-icon"></use>
@@ -437,7 +435,7 @@
             </div>
           </div>
         </div>
-        <button class="tours__button">Показать все туры <svg width="12" height="16">
+        <button class="tours__button" type="button">Показать все туры <svg width="12" height="16">
             <use href="img/sprite.svg#tours-arrow-right">
             </use>
           </svg></button>
@@ -466,12 +464,12 @@
           Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         <h3>Наши инструкторы</h3>
         <div class="training__swiper-button-wrapper">
-          <button class="swiper-button-prev training__button-prev" data-swiper="button-prev">
+          <button class="swiper-button-prev training__button-prev" data-swiper="button-prev" type="button">
             <svg width="17" height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
             </svg>предыдущий слайд</button>
-          <button class="swiper-button-next training__button-next" data-swiper="button-next"><svg width="17"
+          <button class="swiper-button-next training__button-next" data-swiper="button-next" type="button"><svg width="17"
               height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
@@ -496,7 +494,7 @@
               </picture>
               <h4>Александр
                 Прокофьев</h4>
-              <a class="training__slide-social" href="#"><svg width="24" height="24">
+              <a class="training__slide-social" href="#" aria-label="ссылка на соц сеть."><svg width="24" height="24">
                   <use href="img/sprite.svg#slider-vk-icon">
                   </use>
                 </svg></a>
@@ -518,7 +516,7 @@
               </picture>
               <h4>Светлана
                 Афиногенова</h4>
-              <a class="training__slide-social" href="#"><svg width="24" height="24">
+              <a class="training__slide-social" href="#" aria-label="ссылка на соц сеть."><svg width="24" height="24">
                   <use href="img/sprite.svg#slider-vk-icon">
                   </use>
                 </svg></a>
@@ -541,7 +539,7 @@
               </picture>
               <h4>Надежда
                 Колесниченко</h4>
-              <a class="training__slide-social" href="#"><svg width="24" height="24">
+              <a class="training__slide-social" href="#" aria-label="ссылка на соц сеть."><svg width="24" height="24">
                   <use href="img/sprite.svg#slider-vk-icon">
                   </use>
                 </svg></a>
@@ -564,7 +562,7 @@
               </picture>
               <h4>Федор
                 Кайгородов</h4>
-              <a class="training__slide-social"><svg width="24" height="24">
+              <a class="training__slide-social" href="#" aria-label="ссылка на соц сеть."><svg width="24" height="24">
                   <use href="img/sprite.svg#slider-vk-icon">
                   </use>
                 </svg></a>
@@ -606,7 +604,7 @@
                   srcset="img/training/slider-image-2-desktop@2x.png 2x" width="255" height="200" alt="Мария Краснова">
               </picture>
               <h4>Мария Краснова</h4>
-              <a class="training__slide-social"><svg width="24" height="24">
+              <a class="training__slide-social" href="#" aria-label="ссылка на соц сеть."><svg width="24" height="24">
                   <use href="img/sprite.svg#slider-vk-icon">
                   </use>
                 </svg></a>
@@ -618,23 +616,23 @@
         <ul class="training__process-list">
           <li class="training__process-item training__process-item--map">
             <img src="img/svg/map-icon.svg" alt="" width="25" height="25">
-            <span class="training__process-description"> Изучение спортивного
+            <span class="training__process-description">Изучение спортивного
               туристского движения</span>
           </li>
           <li class="training__process-item training__process-item--boots"><img src="img/svg/boots-icon.svg" alt=""
               width="25" height="25">
-            <span class="training__process-description"> Подготовка и техническое снаряжение
+            <span class="training__process-description">Подготовка и техническое снаряжение
               в походах</span>
           </li>
           <li class="training__process-item training__process-item--tree"><img src="img/svg/tree-icon.svg" alt=""
               width="25" height="25">
-            <span class="training__process-description"> Лекции
+            <span class="training__process-description">Лекции
               по окружающей среде, экологии
               и гигиене</span>
           </li>
           <li class="training__process-item training__process-item--mountain"><img src="img/svg/mountain-icon.svg"
               alt="" width="25" height="25">
-            <span class="training__process-description"> Разъяснение сложности горных препятствий</span>
+            <span class="training__process-description">Разъяснение сложности горных препятствий</span>
           </li>
         </ul>
       </div>
@@ -663,22 +661,15 @@
         <div class="about__content-wrapper">
           <div class="about__text-wrapper about__text-wrapper--first-wrapper">
             <h3>История компании</h3>
-            <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, <br
-                class="about__line-breaker-1"> нам это настолько
-              понравилось,<br class="about__line-breaker-2"> что мы этим стали жить. Спустя 5 лет, в 2005 году мы
-              основали компанию, чтобы показывать
-              людям
-              удивительные места нашей страны.</p>
+            <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения,<br class="about__line-breaker-1">нам это настолько
+              понравилось,<br class="about__line-breaker-2">что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
           </div>
           <div class="about__text-wrapper about__text-wrapper--second-wrapper">
             <h3>Наша цель</h3>
             <p>Подарить вам незабываемые впечатления от похода в горы. <br class="about__line-breaker-3">Мы берём на
-              себя <br class="about__line-breaker-4"> все организационные вопросы. <br class="about__line-breaker-5">
-              При организации мы обязательно учтём <br class="about__line-breaker-6"> все ваши пожелания. <br
-                class="about__line-breaker-7"> Вам
-              останется только наслаждаться
-              незабываемым
-              приключением<br class="about__line-breaker-8"> в приятной компании.</p>
+              себя <br class="about__line-breaker-4">все организационные вопросы. <br class="about__line-breaker-5">
+              При организации мы обязательно учтём<br class="about__line-breaker-6">все ваши пожелания.<br
+                class="about__line-breaker-7">Вам останется только наслаждаться незабываемым приключением<br class="about__line-breaker-8">в приятной компании.</p>
           </div>
         </div>
       </div>
@@ -690,12 +681,12 @@
         <h2>Отзывы</h2>
         <span class="reviews__title-shadow">Отзывы</span>
         <div class="reviews__swiper-button-wrapper">
-          <button class="swiper-button-prev reviews__button-prev" data-swiper="button-prev">
+          <button class="swiper-button-prev reviews__button-prev" data-swiper="button-prev" type="button">
             <svg width="17" height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
             </svg>предыдущий слайд</button>
-          <button class="swiper-button-next reviews__button-next" data-swiper="button-next"><svg width="17" height="12">
+          <button class="swiper-button-next reviews__button-next" data-swiper="button-next" type="button"><svg width="17" height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
             </svg>следующий слайд
@@ -853,20 +844,19 @@
               <img src="img/svg/advantages/security-icon.svg" alt="" width="54" height="54">
               <h3>Безопасность</h3>
               <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем
-                планы действий <br class="advantages__line-breaker-1"> на случай непредвиденных обстоятельств<br
-                  class="advantages__line-breaker-2"> и даем
-                гарантию полной безопасности<br class="advantages__line-breaker-3"> во время
+                планы действий<br class="advantages__line-breaker-1">на случай непредвиденных обстоятельств<br
+                  class="advantages__line-breaker-2">и даем
+                гарантию полной безопасности<br class="advantages__line-breaker-3">во время
                 всего тура.</p>
             </div>
             <div class="swiper-slide advantages__slide" tabindex="0">
               <img src="img/svg/advantages/crown-icon.svg" alt="" width="54" height="54">
               <h3>Экспертиза и знания</h3>
               <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
-                безопасности.<br class="advantages__line-breaker-4"> Это гарантирует,<br
-                  class="advantages__line-breaker-5"> что наши клиенты находятся <br class="advantages__line-breaker-6">
-                в
+                безопасности.<br class="advantages__line-breaker-4">Это гарантирует,<br
+                  class="advantages__line-breaker-5">что наши клиенты находятся <br class="advantages__line-breaker-6">в
                 надежных руках и могут в полной мере
-                насладиться опытом<br class="advantages__line-breaker-7"> без опасений.</p>
+                насладиться опытом<br class="advantages__line-breaker-7">без опасений.</p>
             </div>
             <div class="swiper-slide advantages__slide" tabindex="0">
               <img src="img/svg/advantages/boots-icon.svg" alt="" width="54" height="54">
@@ -891,12 +881,12 @@
           </div>
         </div>
         <div class="advantages__swiper-button-wrapper">
-          <button class="swiper-button-prev advantages__button-prev" data-swiper="button-prev">
+          <button class="swiper-button-prev advantages__button-prev" data-swiper="button-prev" type="button">
             <svg width="17" height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
             </svg>предыдущий слайд</button>
-          <button class="swiper-button-next advantages__button-next" data-swiper="button-next"><svg width="17"
+          <button class="swiper-button-next advantages__button-next" data-swiper="button-next" type="button"><svg width="17"
               height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
@@ -913,12 +903,12 @@
         <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а также отмечайте нас на фото.
           Лучшие фотографии украсят этот раздел нашего сайта.</p>
         <div class="gallery__swiper-button-wrapper">
-          <button class="swiper-button-prev gallery__button-prev" data-swiper="button-prev">
+          <button class="swiper-button-prev gallery__button-prev" data-swiper="button-prev" type="button">
             <svg width="17" height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
             </svg>предыдущий слайд</button>
-          <button class="swiper-button-next gallery__button-next" data-swiper="button-next"><svg width="17" height="12">
+          <button class="swiper-button-next gallery__button-next" data-swiper="button-next" type="button"><svg width="17" height="12">
               <use href="img/sprite.svg#arrow-left">
               </use>
             </svg>следующий слайд
@@ -1110,100 +1100,102 @@
       </div>
     </section>
 
-    </main>
-    <footer class="footer" data-test="footer" id="footer">
-      <div class="footer__container container">
-        <div class="footer__text-wrapper">
-          <h2>Контакты</h2>
-          <span class="footer__title-shadow">Контакты</span>
-          <p>Свяжитесь с нами любым удобным <br> для вас способом или приходите <br> к нам в гости. Мы будем рады
-            поделиться
-            увлекательными историями и подобрать для вас тур.</p>
-        </div>
-        <div class="footer__contacts contacts">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <img src="img/svg/contacts/phone-icon.svg" alt="" width="24" height="24">
-              <h3 class="contacts__title">Телефон</h3>
-              <a class="contacts__description" href="tel:7-983-745-45-45">+7 983 745-45-45</a>
-            </li>
-            <li class="contacts__item">
-              <img src="img/svg/contacts/mail-icon.svg" alt="" width="24" height="24">
-              <h3 class="contacts__title">Email</h3>
-              <a class="contacts__description" href="info@lifetour.com">info@lifetour.com</a>
-            </li>
-            <li class="contacts__item">
-              <img src="img/svg/contacts/pin-icon.svg" alt="" width="24" height="24">
-              <h3 class="contacts__title">Адрес</h3>
-              <p class="contacts__description">г. Москва, пр-т Мира, д. 14, офис 101</p>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__map">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="img/footer/map-mobile.webp 1x, img/footer/map-mobile@2x.webp 2x">
-            <source type="image/jpg" media="(max-width: 767px)"
-              srcset="img/footer/map-mobile.jpg 1x, img/footer/map-mobile@2x.jpg 2x">
-            <source type="image/webp" media="(max-width: 1023px)"
-              srcset="img/footer/map-tablet.webp 1x, img/footer/map-tablet@2x.webp 2x">
-            <source type="image/jpg" media="(max-width: 1023px)"
-              srcset="img/footer/map-tablet.jpg 1x, img/footer/map-tablet@2x.jpg 2x">
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="img/footer/map-semitablet.webp 1x, img/footer/map-semitablet@2x.webp 2x">
-            <source type="image/jpg" media="(max-width: 1199px)"
-              srcset="img/footer/map-semitablet.jpg 1x, img/footer/map-semitablet@2x.jpg 2x">
-            <img src="img/footer/map-desktop.png" srcset="img/footer/map-desktop@2x.png 2x" width="585" height="324"
-              alt="Местоположение офиса.">
-          </picture>
-        </div>
-        <div class="footer__add-nav add-nav">
-          <nav class="add-nav">
-            <div class="add-nav__logo" alt="логотип Lifetour">
-              <svg width="200" height="62">
-                <use href="img/sprite.svg#logotype-footer"></use>
-              </svg>
-            </div>
-            <ul class="add-nav__list">
-              <li class="add-nav__item add-nav__item--tours"><a class="add-nav__link" href="#tours">Туры</a></li>
-              <li class="add-nav__item add-nav__item--learning"><a class="add-nav__link" href="#training">Обучение</a></li>
-              <li class="add-nav__item add-nav__item--about"><a class="add-nav__link" href="#about">О нас</a></li>
-              <li class="add-nav__item add-nav__item--reviews"><a class="add-nav__link" href="#reviews">Отзывы</a></li>
-              <li class="add-nav__item add-nav__item--photos"><a class="add-nav__link" href="#gallery">Фотографии</a></li>
-              <li class="add-nav__item add-nav__item--contacts"><a class="add-nav__link" href="#footer">Контакты</a></li>
-            </ul>
-            <a class="add-nav__telephone" href="tel:8-800-725-32-32">8 800 725-32-32</a>
-          </nav>
-        </div>
-        <div class="footer__socials socials">
-          <ul class="socials__list">
-            <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
-                <span class="visually-hidden">Vkontakte.</span>
-                <svg width="30" height="30">
-                  <use href="img/sprite.svg#vk-logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item"><a class="socials__link  socials__link--ok" href="#">
-                <span class="visually-hidden">Odnoklassniki.</span>
-                <svg width="30" height="30">
-                  <use href="img/sprite.svg#ok-logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item"><a class="socials__link socials__link--reddit" href="#">
-                <span class="visually-hidden">Reddit.</span>
-                <svg width="30" height="30">
-                  <use href="img/sprite.svg#reddit-logo"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <a class="footer__policy" href="#">Политика конфиденциальности</a>
+  </main>
+  <footer class="footer" data-test="footer" id="footer">
+    <div class="footer__container container">
+      <div class="footer__text-wrapper">
+        <h2>Контакты</h2>
+        <span class="footer__title-shadow">Контакты</span>
+        <p>Свяжитесь с нами любым удобным <br> для вас способом или приходите <br> к нам в гости. Мы будем рады
+          поделиться
+          увлекательными историями и подобрать для вас тур.</p>
       </div>
-    </footer>
-  </div>
+      <div class="footer__contacts contacts">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <img src="img/svg/contacts/phone-icon.svg" alt="" width="24" height="24">
+            <h3 class="contacts__title">Телефон</h3>
+            <a class="contacts__description" href="tel:7-983-745-45-45">+7 983 745-45-45</a>
+          </li>
+          <li class="contacts__item">
+            <img src="img/svg/contacts/mail-icon.svg" alt="" width="24" height="24">
+            <h3 class="contacts__title">Email</h3>
+            <a class="contacts__description" href="info@lifetour.com">info@lifetour.com</a>
+          </li>
+          <li class="contacts__item">
+            <img src="img/svg/contacts/pin-icon.svg" alt="" width="24" height="24">
+            <h3 class="contacts__title">Адрес</h3>
+            <p class="contacts__description">г. Москва, пр-т Мира, д. 14, офис 101</p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__map">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/footer/map-mobile.webp 1x, img/footer/map-mobile@2x.webp 2x">
+          <source type="image/jpg" media="(max-width: 767px)"
+            srcset="img/footer/map-mobile.jpg 1x, img/footer/map-mobile@2x.jpg 2x">
+          <source type="image/webp" media="(max-width: 1023px)"
+            srcset="img/footer/map-tablet.webp 1x, img/footer/map-tablet@2x.webp 2x">
+          <source type="image/jpg" media="(max-width: 1023px)"
+            srcset="img/footer/map-tablet.jpg 1x, img/footer/map-tablet@2x.jpg 2x">
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="img/footer/map-semitablet.webp 1x, img/footer/map-semitablet@2x.webp 2x">
+          <source type="image/jpg" media="(max-width: 1199px)"
+            srcset="img/footer/map-semitablet.jpg 1x, img/footer/map-semitablet@2x.jpg 2x">
+          <img src="img/footer/map-desktop.png" srcset="img/footer/map-desktop@2x.png 2x" width="585" height="324"
+            alt="Местоположение офиса.">
+        </picture>
+      </div>
+      <div class="footer__add-nav add-nav">
+        <nav class="add-nav">
+          <div class="add-nav__logo">
+            <svg width="200" height="62">
+              <use href="img/sprite.svg#logotype-footer"></use>
+            </svg>
+          </div>
+          <ul class="add-nav__list">
+            <li class="add-nav__item add-nav__item--tours"><a class="add-nav__link" href="#tours">Туры</a></li>
+            <li class="add-nav__item add-nav__item--learning"><a class="add-nav__link" href="#training">Обучение</a>
+            </li>
+            <li class="add-nav__item add-nav__item--about"><a class="add-nav__link" href="#about">О нас</a></li>
+            <li class="add-nav__item add-nav__item--reviews"><a class="add-nav__link" href="#reviews">Отзывы</a></li>
+            <li class="add-nav__item add-nav__item--photos"><a class="add-nav__link" href="#gallery">Фотографии</a>
+            </li>
+            <li class="add-nav__item add-nav__item--contacts"><a class="add-nav__link" href="#footer">Контакты</a>
+            </li>
+          </ul>
+          <a class="add-nav__telephone" href="tel:8-800-725-32-32">8 800 725-32-32</a>
+        </nav>
+      </div>
+      <div class="footer__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
+              <span class="visually-hidden">Vkontakte.</span>
+              <svg width="30" height="30">
+                <use href="img/sprite.svg#vk-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item"><a class="socials__link  socials__link--ok" href="#">
+              <span class="visually-hidden">Odnoklassniki.</span>
+              <svg width="30" height="30">
+                <use href="img/sprite.svg#ok-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item"><a class="socials__link socials__link--reddit" href="#">
+              <span class="visually-hidden">Reddit.</span>
+              <svg width="30" height="30">
+                <use href="img/sprite.svg#reddit-logo"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="footer__policy" href="#">Политика конфиденциальности</a>
+    </div>
+  </footer>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

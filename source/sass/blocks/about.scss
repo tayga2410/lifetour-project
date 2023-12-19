@@ -12,7 +12,6 @@
 }
 
 
-
 .about__container {
   position: relative;
   padding: 46px 120px 0 735px;
@@ -155,6 +154,7 @@
 
 .about__line-breaker-1 {
   display: none;
+
   @include vp-1199 {
     display: block;
   }
@@ -166,6 +166,7 @@
 
 .about__line-breaker-2 {
   display: none;
+
   @include vp-1199 {
     display: block;
   }
@@ -177,6 +178,7 @@
 
 .about__line-breaker-3 {
   display: none;
+
   @include vp-1199 {
     display: block;
   }
@@ -188,6 +190,7 @@
 
 .about__line-breaker-4 {
   display: none;
+
   @include vp-1199 {
     display: block;
   }
@@ -195,6 +198,7 @@
 
 .about__line-breaker-5 {
   display: none;
+
   @include vp-1199 {
     display: block;
   }
@@ -208,6 +212,7 @@
 
 .about__line-breaker-7 {
   display: none;
+
   @include vp-1199 {
     display: block;
   }
@@ -219,6 +224,7 @@
 
 .about__line-breaker-8 {
   display: none;
+
   @include vp-1199 {
     display: block;
   }

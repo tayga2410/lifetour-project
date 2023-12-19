@@ -308,9 +308,9 @@
   img {
     max-height: 179px;
 
-   @include vp-767 {
-    max-height: 100px;
-   }
+    @include vp-767 {
+      max-height: 100px;
+    }
   }
 }
 
@@ -326,6 +326,6 @@
 
     @include vp-767 {
       max-height: 157px;
-     }
-   }
+    }
+  }
 }

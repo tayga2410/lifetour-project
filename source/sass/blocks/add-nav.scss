@@ -69,6 +69,7 @@
   @include vp-767 {
     text-align: center;
   }
+
   &--tours {
     @include vp-767 {
       order: 1;
@@ -105,6 +106,7 @@
     }
   }
 }
+
 .add-nav__telephone {
   color: $color-default-black;
   align-self: center;

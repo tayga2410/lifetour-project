@@ -8,7 +8,6 @@
   @include vp-767 {
     min-height: 620px;
   }
-
 }
 
 .form__container {
@@ -64,15 +63,13 @@
     height: 760px;
 
     @include vp-1199 {
-     height: 680px;
+      height: 680px;
     }
 
     @include vp-767 {
       height: 620px;
     }
-
   }
-
 }
 
 .form__input-container {
