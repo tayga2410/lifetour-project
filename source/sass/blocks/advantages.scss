@@ -131,9 +131,16 @@
 
   @include vp-1199 {
     padding: 29px 19px;
+    max-width: 452px;
+    min-height: 274px;
+  }
+
+  @include vp-1023 {
+    padding: 29px 19px;
     max-width: 324px;
     min-height: 340px;
   }
+
 
   @include vp-767 {
     padding: 20px 10px;
@@ -197,7 +204,15 @@
 }
 
 .advantages__slide:last-child {
+
   @include vp-1199 {
+    padding: 29px 19px;
+    max-width: 380px;
+    min-height: 296px;
+    margin: 0 auto;
+  }
+
+  @include vp-1023 {
     margin: 0 auto;
     max-width: 380px;
     min-height: 290px;
@@ -305,7 +320,7 @@
 .advantages__line-breaker-5 {
   display: none;
 
-  @include vp-1199 {
+  @include vp-1023 {
     display: block;
   }
 
@@ -315,7 +330,13 @@
 }
 
 .advantages__line-breaker-6 {
-  @include vp-767 {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-1024 {
     display: block;
   }
 }
@@ -323,7 +344,7 @@
 .advantages__line-breaker-7 {
   display: none;
 
-  @include vp-1199 {
+  @include vp-1023 {
     display: block;
   }
 

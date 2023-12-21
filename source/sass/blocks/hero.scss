@@ -172,8 +172,12 @@
   @include vp-1199 {
     width: 442px;
     height: 300px;
-    right: 163px;
     bottom: 187px;
+    right: 259px;
+  }
+
+  @include vp-1024 {
+    right: 163px;
   }
 
   @include vp-767 {
@@ -264,7 +268,7 @@
   }
 
   @include vp-767 {
-    display: none;
+    left: 40%;
   }
 }
 
@@ -276,8 +280,12 @@
   @include vp-1199 {
     width: 266px;
     height: 351px;
-    right: 339px;
     bottom: 136px;
+    right: 467px;
+  }
+
+  @include vp-1024 {
+    right: 339px;
   }
 
   @include vp-767 {
@@ -293,8 +301,12 @@
   @include vp-1199 {
     width: 236px;
     height: 312px;
-    right: 163px;
     bottom: 122px;
+    right: 291px;
+  }
+
+  @include vp-1024 {
+    right: 163px;
   }
 
   @include vp-767 {
@@ -318,6 +330,10 @@
   @include vp-1199 {
     right: 214px;
     bottom: 267px;
+  }
+
+  @include vp-1024 {
+    right: 259px;
   }
 
   @include vp-767 {
