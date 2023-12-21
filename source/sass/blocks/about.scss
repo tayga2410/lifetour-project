@@ -1,28 +1,22 @@
 .about {
-  padding: 0 0 135px;
   position: relative;
-
-  @media (max-width: $vp-768) {
-    padding: 0 0 54px;
-  }
-
-  @include vp-767 {
-    padding: 0 0 31px;
-  }
 }
-
 
 .about__container {
   position: relative;
-  padding: 46px 120px 0 735px;
+  padding: 79px 120px 82px 735px;
   object-fit: cover;
 
   @include vp-1199 {
-    padding: 10px 45px 0 453px;
+    padding: 18px 45px 54px 453px;
+  }
+
+  @include vp-1024 {
+    padding: 19px 45px 2px 453px;
   }
 
   @include vp-767 {
-    padding: 374px 15px 10px;
+    padding: 407px 15px 1px;
   }
 
   h2 {
@@ -50,15 +44,15 @@
 .about__image-wrapper {
   position: absolute;
   left: 0;
-  top: 23px;
+  top: 56px;
   z-index: -1;
 
   @include vp-1199 {
-    top: 51px;
+    top: 60px;
   }
 
   @include vp-767 {
-    top: -33px;
+    top: 0;
   }
 
   img {
@@ -74,12 +68,13 @@
   opacity: 0.03;
   position: absolute;
   left: 735px;
-  top: 28px;
+  top: 63px;
 
   @include vp-1199 {
     left: 453px;
     font-size: 40px;
     line-height: 40px;
+    top: 7px;
   }
 
   @include vp-767 {
@@ -177,13 +172,9 @@
 }
 
 .about__line-breaker-3 {
-  display: none;
+  display: block;
 
   @include vp-1199 {
-    display: block;
-  }
-
-  @include vp-767 {
     display: none;
   }
 }
@@ -193,6 +184,10 @@
 
   @include vp-1199 {
     display: block;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -205,12 +200,20 @@
 }
 
 .about__line-breaker-6 {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+  }
+}
+
+.about__line-breaker-7 {
   @include vp-1199 {
     display: none;
   }
 }
 
-.about__line-breaker-7 {
+.about__line-breaker-8 {
   display: none;
 
   @include vp-1199 {
@@ -222,7 +225,7 @@
   }
 }
 
-.about__line-breaker-8 {
+.about__line-breaker-9 {
   display: none;
 
   @include vp-1199 {

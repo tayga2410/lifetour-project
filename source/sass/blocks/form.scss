@@ -16,6 +16,18 @@
   color: $color-default-white;
   text-align: center;
 
+  @include vp-1199 {
+    padding: 0;
+  }
+
+  @include vp-1024 {
+    padding: 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+
   h2 {
     font-size: 35px;
     font-weight: 800;
@@ -55,7 +67,6 @@
       margin: 0 auto 20px;
     }
   }
-
 
   img {
     position: absolute;

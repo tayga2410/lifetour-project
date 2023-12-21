@@ -211,12 +211,11 @@
   position: absolute;
   width: 37px;
   height: 35px;
-  z-index: 1;
+  z-index: 11;
   background-color: $color-default-blue;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  opacity: 0.35;
   cursor: auto;
   pointer-events: none;
 }

@@ -1,12 +1,12 @@
 import swiper from "./swiper";
 
 const loopDisabled = false;
-const loopEnabled = true; // loop: false для hero блока
+const loopEnabled = true;
 
 const heroSwiperLoop = loopEnabled;
 const toursSwiperLoop = loopDisabled;
 const trainingSwiperLoop = loopDisabled;
-const reviewsSwiperLoop = loopDisabled;
+const reviewsSwiperLoop = loopEnabled;
 const advantagesSwiperLoop = loopDisabled;
 const gallerySwiperLoop = loopEnabled;
 
@@ -34,13 +34,16 @@ const toursSwiperOptions = {
   },
   breakpoints: {
     350: {
+      initialSlide: 1,
       slidesPerView: 1,
     },
     768: {
+      initialSlide: 1,
       slidesPerView: 2,
       spaceBetween: 18
     },
     1200: {
+      initialSlide: 1,
       slidesPerView: 3,
       spaceBetween: 30
     },
@@ -56,17 +59,17 @@ const trainingSwiperOptions = {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      initialSlide: 2
+      initialSlide: 3
     },
     768: {
       slidesPerView: 3,
       spaceBetween: 20,
-      initialSlide: 0
+      initialSlide: 1
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 20,
-      initialSlide: 0
+      initialSlide: 1,
     },
   },
 };
@@ -77,7 +80,27 @@ const reviewsSwiperOptions = {
     nextEl: '[data-swiper="reviews-container"] [data-swiper="button-next"]',
     prevEl: '[data-swiper="reviews-container"] [data-swiper="button-prev"]',
   },
-  slidesPerView: 1,
+  breakpoints: {
+    1200: {
+      slidesPerView: 'auto',
+      spaceBetween: 120,
+    },
+
+    1024: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
+
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
+
+    350: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
 };
 
 const advantagesSwiperOptions = {
