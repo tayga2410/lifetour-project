@@ -116,6 +116,16 @@
     line-height: 16px;
     letter-spacing: 0.64px;
     text-transform: uppercase;
+
+    @include hover {
+      border-bottom: 1px solid $color-default-black;
+      padding-bottom: 3px;
+    }
+
+    @include focus {
+      border: none;
+      outline: 1px solid $color-default-black;
+    }
   }
 
   @include vp-767 {

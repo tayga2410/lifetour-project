@@ -54,11 +54,11 @@
   }
 
   @include vp-1023 {
-    padding-bottom: 54px;
+    padding-bottom: 55px;
   }
 
   @include vp-767 {
-    padding-bottom: 29px;
+    padding-bottom: 31px;
   }
 }
 
@@ -138,7 +138,7 @@
   margin: 0 0 64px;
 
   @include vp-1199 {
-    margin: 0 0 36px;
+    margin: 0 0 35px;
   }
 
   @include vp-767 {
@@ -283,6 +283,14 @@
   line-height: 13px;
 }
 
+.tours__button-wrapper {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 .tours__button {
   font-size: 16px;
   font-weight: 700;
@@ -292,11 +300,8 @@
   background-color: transparent;
   border: none;
   display: flex;
-  align-items: center;
-  gap: 9px;
-  margin: 0 auto;
   padding: 0;
-  text-align: center;
+  cursor: pointer;
 
   @include vp-767 {
     font-size: 14px;
@@ -304,4 +309,66 @@
     line-height: 14px;
     letter-spacing: 0.56px;
   }
+
+  @include hover-focus {
+    color: #1c3374;
+  }
+
+  @include active {
+    color: $color-default-blue;
+  }
+
+  @include disabled {
+    color: $color-default-blue;
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+  }
+}
+
+.tours__arrow {
+  border: solid $color-default-black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.tours__button-wrapper:hover .tours__button,
+.tours__button-wrapper:hover .tours__arrow {
+  color: $color-default-black;
+  border: solid $color-default-black;
+  border-width: 0 2px 2px 0;
+}
+
+.tours__button-wrapper:focus .tours__button,
+.tours__button-wrapper:focus .tours__arrow {
+  color: #1c3374;
+  border: solid #1c3374;
+  border-width: 0 2px 2px 0;
+}
+
+.tours__button-wrapper:active .tours__button,
+.tours__button-wrapper:active .tours__arrow {
+  color: $color-default-blue;
+  border: solid $color-default-blue;
+  border-width: 0 2px 2px 0;
+}
+
+.tours__button-wrapper:disabled .tours__button,
+.tours__button-wrapper:disabled .tours__arrow {
+  color: $color-default-blue;
+  border: solid $color-default-blue;
+  border-width: 0 2px 2px 0;
+  cursor: not-allowed;
+  pointer-events: none;
+  outline: none;
+}
+
+.tours__button-wrapper:hover .tours__button,
+.tours__button-wrapper:focus .tours__button,
+.tours__button-wrapper:active .tours__button,
+.tours__button-wrapper:disabled .tours__button {
+  border: none;
 }

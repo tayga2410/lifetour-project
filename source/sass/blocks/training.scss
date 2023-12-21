@@ -301,6 +301,29 @@
 .training__slide-social {
   cursor: pointer;
   margin: 0 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  display: block;
+
+
+  @include hover-focus {
+    border: 1px solid $color-default-black;
+  }
+
+  @include active {
+    background-color: $color-default-blue;
+    color: $color-default-white;
+  }
+
+  @include disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: none;
+    color: rgb(45, 56, 63, 0.3);
+    border: 1px solid rgb(45, 56, 63, 0.3);
+    opacity: 0.3;
+  }
 }
 
 .training__process-list {
