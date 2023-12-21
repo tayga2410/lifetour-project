@@ -227,13 +227,13 @@
 }
 .swiper-navigation-disabled .swiper-button-prev,
 .swiper-navigation-disabled .swiper-button-next {
-  display: none !important;
+  display: none;
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
-  text-transform: none !important;
+  text-transform: none;
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
@@ -278,7 +278,7 @@
 }
 .swiper-pagination-disabled > .swiper-pagination,
 .swiper-pagination.swiper-pagination-disabled {
-  display: none !important;
+  display: none;
 }
 /* Common Styles */
 .swiper-pagination-fraction,
@@ -353,7 +353,7 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 .swiper-pagination-bullet:only-child {
-  display: none !important;
+  display: none;
 }
 .swiper-pagination-bullet-active {
   background-color: $color-default-white;
@@ -458,7 +458,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-scrollbar-disabled > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-disabled {
-  display: none !important;
+  display: none;
 }
 .swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
